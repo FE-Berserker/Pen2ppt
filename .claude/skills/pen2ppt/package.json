@@ -1,0 +1,14 @@
+{
+  "name": "pen2ppt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pencil (.pen) -> per-frame HTML -> editable PPTX, glued by a Claude Code skill using pencil MCP + dom-to-pptx.",
+  "scripts": {
+    "combine": "node scripts/build-combined.mjs",
+    "export": "node scripts/export-pptx.mjs"
+  },
+  "dependencies": {
+    "dom-to-pptx": "^2.0.3"
+  }
+}

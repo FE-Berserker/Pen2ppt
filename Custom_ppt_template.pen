@@ -1,0 +1,2359 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "f583V",
+          "name": "topSection",
+          "width": "fill_container",
+          "height": 420,
+          "fill": "#339999",
+          "layout": "vertical",
+          "gap": 20,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "btfzv",
+              "name": "title",
+              "fill": "#FFFFFF",
+              "content": "基于Pencil的PPT模板",
+              "fontFamily": "Inter",
+              "fontSize": 44,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "oBg85",
+              "name": "subtitle",
+              "fill": "#FFFFFF",
+              "content": "“基于AI的 PPT 模板”",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal",
+              "fontStyle": "italic"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hhWdJ",
+          "name": "bottomSection",
+          "width": "fill_container",
+          "height": 300,
+          "fill": "#FFFFFF",
+          "layout": "vertical",
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "2gWSs",
+              "name": "info2",
+              "fill": "#333333",
+              "content": "汇报人：Baffalo",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "RRgxQ",
+              "name": "info3",
+              "fill": "#333333",
+              "content": "发布时间：2026年4月22日",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "6wp24",
+      "x": 0,
+      "y": 750,
+      "name": "tocPage",
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": [
+        30,
+        80,
+        40,
+        80
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "4W3uI",
+          "name": "contentsText",
+          "fill": "#DDDDDD",
+          "stroke": {
+            "thickness": 2,
+            "fill": "#BBBBBB"
+          },
+          "content": "CONTENTS",
+          "fontFamily": "Inter",
+          "fontSize": 100,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "qEFgT",
+          "name": "title",
+          "fill": "#339999",
+          "content": "PPT模板内容",
+          "fontFamily": "Inter",
+          "fontSize": 28,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "rectangle",
+          "id": "bM1oB",
+          "name": "divider",
+          "fill": "#666666",
+          "width": "fill_container",
+          "height": 3
+        },
+        {
+          "type": "frame",
+          "id": "zr015",
+          "name": "listContainer",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 60,
+          "children": [
+            {
+              "type": "frame",
+              "id": "MrEzx",
+              "name": "leftColumn",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ga55s",
+                  "name": "item1",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eWzfB",
+                      "name": "circle1",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cztpr",
+                          "name": "num1",
+                          "fill": "#FFFFFF",
+                          "content": "1",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "F7XO9",
+                      "name": "text1",
+                      "fill": "#339999",
+                      "content": "封面页 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nHNlC",
+                  "name": "item3",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AkAAG",
+                      "name": "circle3",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "znjEK",
+                          "name": "num3",
+                          "fill": "#FFFFFF",
+                          "content": "3",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "tqRFr",
+                      "name": "text3",
+                      "fill": "#339999",
+                      "content": "关于模板 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EI2i8",
+                  "name": "item5",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jCgle",
+                      "name": "circle5",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LnKTY",
+                          "name": "num5",
+                          "fill": "#FFFFFF",
+                          "content": "5",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "LQkvt",
+                      "name": "text5",
+                      "fill": "#339999",
+                      "content": "品字型分栏页 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ruem2",
+                  "name": "item7",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NbGoR",
+                      "name": "circle7",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zpLk5",
+                          "name": "num7",
+                          "fill": "#FFFFFF",
+                          "content": "7",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ETZOO",
+                      "name": "text7",
+                      "fill": "#339999",
+                      "content": "代码块高亮 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MItcO",
+                  "name": "item9",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vKGpr",
+                      "name": "circle9",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fKkKC",
+                          "name": "num9",
+                          "fill": "#FFFFFF",
+                          "content": "9",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "B1L1r",
+                      "name": "text9",
+                      "fill": "#339999",
+                      "content": "表格页 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "W9C3P",
+              "name": "rightColumn",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PR22W",
+                  "name": "item2",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S8aCl",
+                      "name": "circle2",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5MFNC",
+                          "name": "num2",
+                          "fill": "#FFFFFF",
+                          "content": "2",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "dYGF6",
+                      "name": "text2",
+                      "fill": "#339999",
+                      "content": "目录页 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9AqaD",
+                  "name": "item4",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "H772r",
+                      "name": "circle4",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "J6ZKp",
+                          "name": "num4",
+                          "fill": "#FFFFFF",
+                          "content": "4",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "0MLEJ",
+                      "name": "text4",
+                      "fill": "#339999",
+                      "content": "两栏图文页 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "P95TT",
+                  "name": "item6",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ghYGw",
+                      "name": "circle6",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "04Cf3",
+                          "name": "num6",
+                          "fill": "#FFFFFF",
+                          "content": "6",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "K13ie",
+                      "name": "text6",
+                      "fill": "#339999",
+                      "content": "引用、链接和引用盒子 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9jwWe",
+                  "name": "item8",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OqRtb",
+                      "name": "circle8",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MV400",
+                          "name": "num8",
+                          "fill": "#FFFFFF",
+                          "content": "8",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "jPCFD",
+                      "name": "text8",
+                      "fill": "#339999",
+                      "content": "流程图示例 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EXgxr",
+                  "name": "item10",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "I2Vi9",
+                      "name": "circle10",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#339999",
+                      "cornerRadius": 14,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "txMir",
+                          "name": "num10",
+                          "fill": "#FFFFFF",
+                          "content": "10",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "3haCa",
+                      "name": "text10",
+                      "fill": "#339999",
+                      "content": "感谢页 ↗",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "10YNr",
+      "x": 0,
+      "y": 2250,
+      "name": "page1",
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        60,
+        80,
+        40,
+        80
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "suiJy",
+          "name": "header1",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "vjqlP",
+              "fill": "#339999",
+              "content": "1. 正文 (双栏布局)",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "rectangle",
+              "id": "FYGTb",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#339999",
+                    "position": 0
+                  },
+                  {
+                    "color": "#66CCCC",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": "fill_container",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JHwcw",
+          "name": "p1Body",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "eLmRJ",
+              "name": "p1Left",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cDrnW",
+                  "name": "p1Para1",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "曲曲折折的荷塘上面，弥望的是田田的叶子。叶子出水很高，像亭亭的舞女的裙。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ME1RC",
+                  "name": "p1Para2",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "层层的叶子中间，零星地点缀着些白花，有袅娜地开着的，有羞涩地打着朵儿的；正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "JSojt",
+                  "name": "p1Para3",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "1zLU3",
+                  "name": "p1Para4",
+                  "fill": "#333333",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉的流水，遮住了，不能见一些颜色；而叶子却更见风致了。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "M6oJw",
+                  "name": "p1Quote",
+                  "fill": "#666666",
+                  "content": "—— 朱自清《荷塘月色》 返回 ↗",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HzkXW",
+              "name": "p1Right",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cTohX",
+                  "name": "p1Image",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "ever73",
+                    "link": "https://unsplash.com/@ever73",
+                    "author": "Everest Louis"
+                  },
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1691460606272-0329689c20fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "I2kKT",
+      "x": 0,
+      "y": 3000,
+      "name": "page2",
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        60,
+        80,
+        40,
+        80
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "xMjBp",
+          "name": "header2",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "Q0r2k",
+              "fill": "#339999",
+              "content": "2. 正文 (品字布局)",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "rectangle",
+              "id": "bJlie",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#339999",
+                    "position": 0
+                  },
+                  {
+                    "color": "#66CCCC",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": "fill_container",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R5pZQ",
+          "name": "p2QuoteFrame",
+          "width": "fill_container",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "fIoGM",
+              "name": "p2QuoteBar",
+              "fill": "#339999",
+              "width": 4,
+              "height": "fill_container"
+            },
+            {
+              "type": "frame",
+              "id": "MTILe",
+              "name": "p2QuoteWrapper",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                16,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8c6qG",
+                  "name": "p2QuoteContent",
+                  "fill": "#444444",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "四百年前，两位截然不同的科学家突破了当时已知世界的边界。1609年在威尼斯，伽利略·伽利雷透过望远镜观察星辰，并制作仪器和进行实验。在布拉格，科班出身的神学家约翰内斯·开普勒发现了行星运动定律，奠定了近代天体物理学的基础，并思考着宇宙的宏伟构造。托马斯·德·帕多瓦以至今较少受到关注却扣人心弦的通信往来为基础，讲述了这两位类型如此迥异的学者之间不对等的关系，以及他们如何在同样的时刻却以各自的方式探索星辰的奥秘。在彼此的鉴照下，他们的远见与固执、睿智与无知得以呈现。这是一部介绍新科学的崛起以及近代来临之际的巨大变革的作品。  ——《宇宙的奥秘》",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CEkpu",
+          "name": "p2Images",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "aaVbs",
+              "name": "p2ImgLeft",
+              "metadata": {
+                "type": "unsplash",
+                "username": "wasimafsar",
+                "link": "https://unsplash.com/@wasimafsar",
+                "author": "Wasim Afsar"
+              },
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1621796540685-5037cb5e866f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzODh8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 8
+            },
+            {
+              "type": "frame",
+              "id": "46isG",
+              "name": "p2ImgRight",
+              "metadata": {
+                "type": "unsplash",
+                "username": "carlo_knell",
+                "link": "https://unsplash.com/@carlo_knell",
+                "author": "Carlo Knell"
+              },
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1544133544-47e2aef9b9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzODl8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "co0aG",
+      "x": 0,
+      "y": 3750,
+      "name": "page3",
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        60,
+        80,
+        40,
+        80
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "4Y4Mq",
+          "name": "header3",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "HRCLN",
+              "fill": "#339999",
+              "content": "3. 引用盒子",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "rectangle",
+              "id": "eyO5D",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#339999",
+                    "position": 0
+                  },
+                  {
+                    "color": "#66CCCC",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": "fill_container",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YEPuc",
+          "name": "p3Callout",
+          "width": "fill_container",
+          "fill": "#F5F5F0",
+          "cornerRadius": 4,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Q4CKQ",
+              "name": "p3CalloutHeader",
+              "width": "fill_container",
+              "height": 44,
+              "fill": "#90C695",
+              "gap": 10,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "omf6j",
+                  "name": "p3CalloutIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "book-open",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                },
+                {
+                  "type": "text",
+                  "id": "HUT8O",
+                  "name": "p3CalloutTitle",
+                  "fill": "#FFFFFF",
+                  "content": "合成控制法 (Synthetic Control Method)",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "11pK6",
+              "name": "p3CalloutBody",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2DoD5",
+                  "name": "p3CalloutPara1",
+                  "fill": "#444444",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "SCM 最早由 Abadie and Gardeazabal (2003) 提出，用来研究西班牙巴斯克地区恐怖活动的经济成本，属于案例研究范畴 (Case Study)。Athey & Imbens (2017) 认为它是过去 15 年计量方法领域最重要的创新。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "uKDz5",
+                  "name": "p3CalloutPara2",
+                  "fill": "#444444",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "合成控制法的基本思想是：虽然无法找到巴斯克地区的最佳控制地区，但可对西班牙的若干大城市进行适当的线性组合（赋予不同的权重），以构造一个更为贴切的「合成控制地区」(Synthetic Control Region)，然后将真实的巴斯克地区与「合成的巴斯克地区」进行对比，即可得到恐袭的影响。",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "bUXFc",
+      "x": 0,
+      "y": 6750,
+      "name": "thanksPage",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "qflza",
+          "name": "thanksTop",
+          "width": "fill_container",
+          "height": 380,
+          "fill": "#339999",
+          "layout": "vertical",
+          "gap": 16,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "EhDvt",
+              "name": "thanksTitle",
+              "fill": "#FFFFFF",
+              "content": "感谢聆听",
+              "fontFamily": "Inter",
+              "fontSize": 56,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "qR20m",
+              "name": "thanksSub",
+              "fill": "#FFFFFF",
+              "content": "THANKS FOR LISTENING",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal",
+              "letterSpacing": 4
+            },
+            {
+              "type": "rectangle",
+              "id": "vK4BR",
+              "name": "thanksDivider",
+              "opacity": 0.6,
+              "fill": "#FFFFFF",
+              "width": 120,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "W3dk0",
+          "name": "thanksBottom",
+          "width": "fill_container",
+          "height": 335,
+          "layout": "vertical",
+          "gap": 14,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "u2s3U",
+              "name": "thanksInfo1",
+              "fill": "#666666",
+              "content": "如有疑问，欢迎交流",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "LDthk",
+          "name": "thanksFooter",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#339999",
+                "position": 0
+              },
+              {
+                "color": "#66CCCC",
+                "position": 1
+              }
+            ]
+          },
+          "width": "fill_container",
+          "height": 4
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Yj18B",
+      "x": 0,
+      "y": 4500,
+      "name": "codePage",
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        60,
+        80,
+        40,
+        80
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "OQWgy",
+          "name": "codeHeader",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "U7je6",
+              "name": "codeTitle",
+              "fill": "#339999",
+              "content": "4. 代码块高亮",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "rectangle",
+              "id": "g0PdC",
+              "name": "codeDivider",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#339999",
+                    "position": 0
+                  },
+                  {
+                    "color": "#66CCCC",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": "fill_container",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "pl0jz",
+          "name": "codeIntro",
+          "fill": "#444444",
+          "content": "支持多种编程语言的语法高亮显示，让代码更具可读性。",
+          "fontFamily": "Inter",
+          "fontSize": 17,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "PRWEi",
+          "name": "codeBlock",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#1E1E2E",
+          "cornerRadius": 8,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            20,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "JYPyL",
+              "name": "codeLang",
+              "fill": "#66CCCC",
+              "content": "python",
+              "fontFamily": "Courier New",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "i6dgi",
+              "name": "codeLine1",
+              "fill": "#CBA6F7",
+              "content": "def hello_world():",
+              "fontFamily": "Courier New",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "kXIDD",
+              "name": "codeLine2",
+              "fill": "#6C7086",
+              "content": "    \"\"\"打印问候语\"\"\"",
+              "fontFamily": "Courier New",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "UYGKP",
+              "name": "codeLine3",
+              "fill": "#F5E0DC",
+              "content": "    name = \"Marp\"",
+              "fontFamily": "Courier New",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "YN4ma",
+              "name": "codeLine4",
+              "fill": "#F5E0DC",
+              "content": "    print(f\"Hello, {name}!\")",
+              "fontFamily": "Courier New",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ImN1r",
+              "name": "codeLine5",
+              "fill": "#F5E0DC",
+              "content": "    return True",
+              "fontFamily": "Courier New",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ivUF2",
+              "name": "codeLine6",
+              "fill": "#F5E0DC",
+              "fontFamily": "Courier New",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "UJ8Nu",
+              "name": "codeLine7",
+              "fill": "#CBA6F7",
+              "content": "if __name__ == \"__main__\":",
+              "fontFamily": "Courier New",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "A8GoU",
+              "name": "codeLine8",
+              "fill": "#89DCEB",
+              "content": "    hello_world()",
+              "fontFamily": "Courier New",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "G7M6G",
+      "x": 0,
+      "y": 5250,
+      "name": "flowPage",
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        60,
+        80
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "mzb3x",
+          "name": "flowHeader",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "ZVhOx",
+              "name": "flowTitle",
+              "fill": "#339999",
+              "content": "5. 流程图示例",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "rectangle",
+              "id": "CgExQ",
+              "name": "flowDivider",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#339999",
+                    "position": 0
+                  },
+                  {
+                    "color": "#66CCCC",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": "fill_container",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "NJfN0",
+          "name": "flowIntro",
+          "fill": "#444444",
+          "content": "使用简洁的流程图展示工作流或算法步骤，直观清晰。",
+          "fontFamily": "Inter",
+          "fontSize": 17,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "KwrKr",
+          "name": "flowChart",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 20,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "OfuUr",
+              "name": "step1",
+              "width": 220,
+              "height": 160,
+              "fill": "#F0F9F9",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "R6DzQ",
+                  "name": "s1Icon",
+                  "width": 36,
+                  "height": 36,
+                  "iconFontName": "database",
+                  "iconFontFamily": "lucide",
+                  "fill": "#339999"
+                },
+                {
+                  "type": "text",
+                  "id": "FDHsg",
+                  "name": "s1Text",
+                  "fill": "#333333",
+                  "content": "数据采集",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "qZTwd",
+                  "name": "s1Sub",
+                  "fill": "#888888",
+                  "content": "收集原始数据",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "i0zrc",
+              "name": "arrow1",
+              "fill": "#339999",
+              "content": "→",
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "3chA3",
+              "name": "step2",
+              "width": 220,
+              "height": 160,
+              "fill": "#F0F9F9",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "JAiDI",
+                  "name": "s2Icon",
+                  "width": 36,
+                  "height": 36,
+                  "iconFontName": "sparkles",
+                  "iconFontFamily": "lucide",
+                  "fill": "#339999"
+                },
+                {
+                  "type": "text",
+                  "id": "z3IKv",
+                  "name": "s2Text",
+                  "fill": "#333333",
+                  "content": "数据清洗",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "G0wEk",
+                  "name": "s2Sub",
+                  "fill": "#888888",
+                  "content": "处理缺失值与异常",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "lZ7cJ",
+              "name": "arrow2",
+              "fill": "#339999",
+              "content": "→",
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "Uqfq0",
+              "name": "step3",
+              "width": 220,
+              "height": 160,
+              "fill": "#F0F9F9",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "nuK9q",
+                  "name": "s3Icon",
+                  "width": 36,
+                  "height": 36,
+                  "iconFontName": "brain",
+                  "iconFontFamily": "lucide",
+                  "fill": "#339999"
+                },
+                {
+                  "type": "text",
+                  "id": "cwkmj",
+                  "name": "s3Text",
+                  "fill": "#333333",
+                  "content": "模型训练",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "lBCVj",
+                  "name": "s3Sub",
+                  "fill": "#888888",
+                  "content": "构建预测模型",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "mgNOP",
+              "name": "arrow3",
+              "fill": "#339999",
+              "content": "→",
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "dZ79d",
+              "name": "step4",
+              "width": 220,
+              "height": 160,
+              "fill": "#339999",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "IgGlu",
+                  "name": "s4Icon",
+                  "width": 36,
+                  "height": 36,
+                  "iconFontName": "check",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                },
+                {
+                  "type": "text",
+                  "id": "Efqde",
+                  "name": "s4Text",
+                  "fill": "#FFFFFF",
+                  "content": "结果评估",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "qXEnw",
+                  "name": "s4Sub",
+                  "fill": "#E0F5F5",
+                  "content": "验证模型效果",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "gGYCG",
+      "x": 0,
+      "y": 6000,
+      "name": "tablePage",
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        60,
+        80
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "dKi1h",
+          "name": "tableHeader",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "text",
+              "id": "fAIml",
+              "name": "tableTitle",
+              "fill": "#339999",
+              "content": "6. 图表示例",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "rectangle",
+              "id": "z09Pk",
+              "name": "tableDivider",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#339999",
+                    "position": 0
+                  },
+                  {
+                    "color": "#66CCCC",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": "fill_container",
+              "height": 3
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "iZazQ",
+          "name": "tableIntro",
+          "fill": "#444444",
+          "content": "下表对比了几种常见的计量经济学方法及其应用场景。",
+          "fontFamily": "Inter",
+          "fontSize": 17,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "c8zBP",
+          "name": "tableFrame",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": {
+            "align": "outside",
+            "thickness": 1,
+            "fill": "#E0E0E0"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "qsIOR",
+              "name": "headerRow",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "#339999",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "1JWPt",
+                  "name": "cellH1",
+                  "width": 200,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ba5M2",
+                      "name": "textH1",
+                      "fill": "#FFFFFF",
+                      "content": "方法名称",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TgnbZ",
+                  "name": "cellH2",
+                  "width": 220,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "taeNS",
+                      "name": "textH2",
+                      "fill": "#FFFFFF",
+                      "content": "提出者",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "a7kjU",
+                  "name": "cellH3",
+                  "width": 280,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "JocUG",
+                      "name": "textH3",
+                      "fill": "#FFFFFF",
+                      "content": "应用领域",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DCHiM",
+                  "name": "cellH4",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NS19i",
+                      "name": "textH4",
+                      "fill": "#FFFFFF",
+                      "content": "核心特点",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rN10L",
+              "name": "row1",
+              "width": "fill_container",
+              "height": 52,
+              "fill": "#FFFFFF",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jcyGH",
+                  "name": "c11",
+                  "width": 200,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WD9ur",
+                      "name": "t11",
+                      "fill": "#333333",
+                      "content": "合成控制法",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vs7jK",
+                  "name": "c12",
+                  "width": 220,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yfSsF",
+                      "name": "t12",
+                      "fill": "#333333",
+                      "content": "Abadie (2003)",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8paBC",
+                  "name": "c13",
+                  "width": 280,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PeV2O",
+                      "name": "t13",
+                      "fill": "#333333",
+                      "content": "政策评估 / 案例研究",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UniwQ",
+                  "name": "c14",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "o2V3U",
+                      "name": "t14",
+                      "fill": "#333333",
+                      "content": "构建合成控制组进行对比",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "5yhlb",
+              "name": "row2",
+              "width": "fill_container",
+              "height": 52,
+              "fill": "#F5F5F5",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HDduy",
+                  "name": "c21",
+                  "width": 200,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ocEVb",
+                      "name": "t21",
+                      "fill": "#333333",
+                      "content": "双重差分",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4y4Sf",
+                  "name": "c22",
+                  "width": 220,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H61Sl",
+                      "name": "t22",
+                      "fill": "#333333",
+                      "content": "Card & Krueger (1994)",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lUWjz",
+                  "name": "c23",
+                  "width": 280,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yW42x",
+                      "name": "t23",
+                      "fill": "#333333",
+                      "content": "政策效应评估",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tAzSW",
+                  "name": "c24",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dpTsj",
+                      "name": "t24",
+                      "fill": "#333333",
+                      "content": "利用处理前后差异估计因果",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tepCF",
+              "name": "row3",
+              "width": "fill_container",
+              "height": 52,
+              "fill": "#FFFFFF",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ml7X6",
+                  "name": "c31",
+                  "width": 200,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7RSig",
+                      "name": "t31",
+                      "fill": "#333333",
+                      "content": "工具变量",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "9lc99",
+                  "name": "c32",
+                  "width": 220,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m2WGU",
+                      "name": "t32",
+                      "fill": "#333333",
+                      "content": "Wright (1928)",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "H1os1",
+                  "name": "c33",
+                  "width": 280,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Idmu9",
+                      "name": "t33",
+                      "fill": "#333333",
+                      "content": "内生性 / 因果推断",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1wMSj",
+                  "name": "c34",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5oefF",
+                      "name": "t34",
+                      "fill": "#333333",
+                      "content": "通过工具分离内生变异",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1vLEH",
+              "name": "row4",
+              "width": "fill_container",
+              "height": 52,
+              "fill": "#F5F5F5",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WzWxn",
+                  "name": "c41",
+                  "width": 200,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c8aYT",
+                      "name": "t41",
+                      "fill": "#333333",
+                      "content": "断点回归",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MVGg2",
+                  "name": "c42",
+                  "width": 220,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "qxCPr",
+                      "name": "t42",
+                      "fill": "#333333",
+                      "content": "Thistlethwaite (1960)",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hsKO2",
+                  "name": "c43",
+                  "width": 280,
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "j0GFa",
+                      "name": "t43",
+                      "fill": "#333333",
+                      "content": "政策门槛 / 资格限制",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Az7g5",
+                  "name": "c44",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EMIoE",
+                      "name": "t44",
+                      "fill": "#333333",
+                      "content": "利用断点处局部随机性",
+                      "fontFamily": "Noto Sans SC",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "9zOl0",
+              "fill": "#E0E0E0",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "AN8CW",
+              "fill": "#E0E0E0",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "apiE9",
+              "fill": "#E0E0E0",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "QF5wc",
+              "fill": "#E0E0E0",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "GCMek",
+      "x": 0,
+      "y": 1500,
+      "name": "aboutPage",
+      "width": 1280,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": [
+        60,
+        100,
+        40,
+        100
+      ],
+      "children": [
+        {
+          "type": "text",
+          "id": "SrUle",
+          "name": "aboutTitle2",
+          "fill": "#339999",
+          "content": "关于模板",
+          "fontFamily": "Inter",
+          "fontSize": 28,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "rectangle",
+          "id": "BrmqB",
+          "name": "aboutDivider2",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#339999",
+                "position": 0
+              },
+              {
+                "color": "#66CCCC",
+                "position": 1
+              }
+            ]
+          },
+          "width": "fill_container",
+          "height": 3
+        },
+        {
+          "type": "text",
+          "id": "V8fAG",
+          "name": "aboutBody2",
+          "fill": "#333333",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "在AI时代来临之前，我一直使用Marp工具来生成我的PPT，这份模板的灵感也是来自于Awesome Marp（https://github.com/favourhong/Awesome-Marp）的开源项目，这份模板一直是我用起来最顺手的。但是Marp并不适合于所有人，上手有一定的门槛。\n\nAI改变了一切。Pencil是一个由AI驱动的画布工具，且AI生成的每一个元素都是支持交互更改的，它几乎弥补了Marp所有的缺点。于是我将Awesome Marp模板导入其中，让AI提取设计语言并生成，效果很好，也添加了原有模板不具备的功能，比如代码高亮和流程图。\n\n基于这份模板，您可以很方便地打造自己的PPT。",
+          "lineHeight": 1.8,
+          "fontFamily": "Inter",
+          "fontSize": 18,
+          "fontWeight": "normal"
+        }
+      ]
+    }
+  ]
+}
