@@ -1,2 +1,11 @@
 .claude/settings.local.json
 node_modules/
+
+# pen2ppt 转换中间产物（exports/ 下的 .pptx 成品仍保留入库）
+exports/*.html
+exports/*.png
+exports/*.jpg
+exports/*.jpeg
+exports/*.gif
+exports/*.webp
+exports/*.svg
