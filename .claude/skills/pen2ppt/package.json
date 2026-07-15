@@ -9,6 +9,7 @@
     "export": "node scripts/export-pptx.mjs"
   },
   "dependencies": {
-    "dom-to-pptx": "^2.0.3"
+    "dom-to-pptx": "^2.0.3",
+    "jszip": "^3.10.1"
   }
 }

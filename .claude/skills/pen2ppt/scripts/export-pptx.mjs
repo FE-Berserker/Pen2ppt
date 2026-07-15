@@ -22,7 +22,7 @@ const get = (flag, dflt) => {
 };
 const has = (flag) => argv.includes(flag);
 const flagIdx = new Set(
-  ['-o', '--output', '--selector', '--width', '--height', '--browser'].flatMap((f) => {
+  ['-o', '--output', '--selector', '--width', '--height', '--browser', '--ea-font', '--map'].flatMap((f) => {
     const i = argv.indexOf(f);
     return i >= 0 ? [i, i + 1] : [];
   })
@@ -216,6 +216,25 @@ try {
     if (imgStats && (imgStats.native + imgStats.fallback) > 0) {
       console.log(`images: ${imgStats.native} embedded as original bytes, ${imgStats.fallback} rasterized (rounded corners / repeat / svg / webp / remote)`);
     }
+  }
+
+  // Post-export font fix: repoint web-font slots (a:ea / a:latin / a:cs, incl.
+  // theme +mn-*/empty slots) to system fonts so the deck renders correctly in
+  // WPS and on machines without the web fonts installed. See WPS-CJK-FONT-FIX.md.
+  if (!has('--no-font-fix')) {
+    const { fixCjkFontsFile, DEFAULT_EA_FONT } = await import('./fix-cjk-fonts.mjs');
+    const maps = argv.filter((a, i) => argv[i - 1] === '--map');
+    const fontStats = await fixCjkFontsFile(output, {
+      eaFont: get('--ea-font', DEFAULT_EA_FONT),
+      maps,
+      noLatinMap: has('--no-latin-map'),
+    });
+    const total = fontStats.ea + fontStats.latin + fontStats.lang;
+    console.log(
+      total > 0
+        ? `font fix: a:ea x${fontStats.ea}, a:latin/cs x${fontStats.latin}, lang=zh-CN x${fontStats.lang} (--no-font-fix to skip, --ea-font/--map/--no-latin-map to tune)`
+        : 'font fix: nothing to rewrite'
+    );
   }
 } finally {
   await browser.close();
