@@ -12,6 +12,7 @@ import path from 'node:path';
 import os from 'node:os';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import puppeteer from 'puppeteer';
+import { patchDomToPptxBundle } from './native-image-patch.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);
@@ -38,12 +39,30 @@ const selector = get('--selector', '.slide');
 const width = parseFloat(get('--width', '13.333'));
 const height = parseFloat(get('--height', '7.5'));
 const browserOverride = get('--browser', null) || process.env.PUPPETEER_EXECUTABLE_PATH || null;
+// Native image embedding (original bytes + PowerPoint-native crop) is on by
+// default; --no-native-images restores stock dom-to-pptx 2x-canvas rasterization.
+const nativeImages = !has('--no-native-images');
 
 const bundleCandidates = [
   path.resolve(__dirname, '..', 'node_modules', 'dom-to-pptx', 'dist', 'dom-to-pptx.bundle.js'),
 ];
 const bundlePath = bundleCandidates.find((p) => fs.existsSync(p));
 if (!bundlePath) throw new Error('dom-to-pptx browser bundle not found in node_modules.');
+
+// Patch the bundle in memory (never on disk): native image embedding +
+// native-resolution raster fallback. See scripts/native-image-patch.mjs.
+let bundleInject;
+if (nativeImages) {
+  const patched = patchDomToPptxBundle(fs.readFileSync(bundlePath, 'utf8'));
+  bundleInject = { content: patched.content };
+  console.log(`native images: on (${patched.applied.length}/${patched.applied.length + patched.missed.length} bundle patches applied)`);
+  for (const m of patched.missed) {
+    console.warn(`WARN: bundle patch missed (dom-to-pptx upgraded?): "${m}" — stock behavior for that path`);
+  }
+} else {
+  bundleInject = { path: bundlePath };
+  console.log('native images: off (--no-native-images) — stock 2x rasterization');
+}
 
 console.log(`deck size: ${(width * 96).toFixed(0)} x ${(height * 96).toFixed(0)} px (${width.toFixed(3)} x ${height.toFixed(3)} in)`);
 
@@ -164,7 +183,7 @@ try {
   }, selector);
   console.log(`layout freeze: ${frozen} element(s) locked to rendered px`);
 
-  await page.addScriptTag({ path: bundlePath });
+  await page.addScriptTag(bundleInject);
   const ok = await page.evaluate(() => !!(window.domToPptx && window.domToPptx.exportToPptx));
   if (!ok) throw new Error('dom-to-pptx failed to load in page.');
 
@@ -191,6 +210,13 @@ try {
   fs.mkdirSync(path.dirname(path.resolve(output)), { recursive: true });
   fs.writeFileSync(output, Buffer.from(base64, 'base64'));
   console.log(`wrote: ${path.resolve(output)}`);
+
+  if (nativeImages) {
+    const imgStats = await page.evaluate(() => window.__pen2pptImgStats || null);
+    if (imgStats && (imgStats.native + imgStats.fallback) > 0) {
+      console.log(`images: ${imgStats.native} embedded as original bytes, ${imgStats.fallback} rasterized (rounded corners / repeat / svg / webp / remote)`);
+    }
+  }
 } finally {
   await browser.close();
   try { fs.rmSync(profileDir, { recursive: true, force: true }); } catch (_) {}
