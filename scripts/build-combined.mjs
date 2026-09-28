@@ -20,18 +20,22 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { resolveWorkspace } from './workspace.mjs';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const REPO_ROOT = path.resolve(__dirname, '..', '..', '..', '..');
-const REPO_EXPORTS = path.join(REPO_ROOT, 'exports');
+// This script operates on a target project (the directory containing the .pen).
+// Pencil's relative asset refs resolve against the cwd first, then each HTML
+// file's own directory. Default input/output paths point at the configured
+// pen2ppt workspace (PEN2PPT_WORKSPACE / ~/.config/pen2ppt/workspace) when one
+// is set, else at ./exports under the cwd.
+const PROJECT_ROOT = process.cwd();
+const DEFAULT_EXPORTS = resolveWorkspace() ?? path.join(PROJECT_ROOT, 'exports');
 
 const argv = process.argv.slice(2);
 const get = (flag, dflt) => {
   const i = argv.indexOf(flag);
   return i >= 0 ? argv[i + 1] : dflt;
 };
-const outPath = get('--out', 'exports/combined.html');
+const outPath = get('--out', path.join(DEFAULT_EXPORTS, 'combined.html'));
 const aspectStr = get('--aspect', '16:9');
 const flagValuePositions = new Set(
   ['--out', '--aspect'].flatMap((f) => {
@@ -63,10 +67,8 @@ const globSorted = (pattern) => {
 let files = inputs.length
   ? inputs
   : [
-      ...globSorted('exports/slide-*.html'),
-      ...globSorted(path.join(REPO_EXPORTS, 'slide-*.html')),
-      ...globSorted('exports/spike-*.html'),
-      ...globSorted(path.join(REPO_EXPORTS, 'spike-*.html')),
+      ...globSorted(path.join(DEFAULT_EXPORTS, 'slide-*.html')),
+      ...globSorted(path.join(DEFAULT_EXPORTS, 'spike-*.html')),
     ];
 files = files.filter((f) => fs.existsSync(f));
 if (!files.length) {
@@ -122,8 +124,12 @@ for (const body of bodies) {
 }
 const copiedAssets = [];
 for (const ref of assetRefs) {
-  const src = path.join(REPO_ROOT, ref); // Pencil image URLs are relative to the .pen
-  if (!fs.existsSync(src)) { warnings.push(`asset not found: ${ref}`); continue; }
+  const candidates = [
+    path.join(PROJECT_ROOT, ref),
+    ...files.map((f) => path.join(path.dirname(path.resolve(f)), ref)),
+  ];
+  const src = candidates.find((c) => fs.existsSync(c));
+  if (!src) { warnings.push(`asset not found: ${ref}`); continue; }
   const dest = path.join(outDir, ref);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   fs.copyFileSync(src, dest);

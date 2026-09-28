@@ -13,6 +13,7 @@ import os from 'node:os';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import puppeteer from 'puppeteer';
 import { patchDomToPptxBundle } from './native-image-patch.mjs';
+import { resolveWorkspace } from './workspace.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);
@@ -33,7 +34,12 @@ if (!input) {
   console.error('Usage: node scripts/export-pptx.mjs <input.html> [-o out.pptx] [--selector .slide] [--width 13.333] [--height 7.5]');
   process.exit(1);
 }
-const output = get('-o', get('--output', 'exports/deck.pptx'));
+// Default output: the configured pen2ppt workspace when one is set, else ./exports.
+const defaultOut = (() => {
+  const w = resolveWorkspace();
+  return w ? path.join(w, 'deck.pptx') : 'exports/deck.pptx';
+})();
+const output = get('-o', get('--output', defaultOut));
 const selector = get('--selector', '.slide');
 // Deck page size: fixed 16:9 (PowerPoint default = 13.333 x 7.5 in). Override with --width/--height (inches).
 const width = parseFloat(get('--width', '13.333'));

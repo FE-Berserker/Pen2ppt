@@ -19,34 +19,38 @@ Closes the loop `.pen → HTML → PPTX`. The first half (`.pen → HTML`) is pr
 - A slide that is **not 16:9** → **contain-fit**: scaled **uniformly** to fit inside the 16:9 page, centered, with **letterboxing** (empty bars on the short sides). **No distortion, no cropping.** This size conversion happens entirely in HTML→PPTX; the `.pen` is untouched.
 - Whenever a slide deviates from 16:9, **warn the user** (which slides, their size, that they were contain-fit / letterboxed).
 
-## Prerequisites (already set up in this repo)
+## Prerequisites
 
-- Skill dir: `<repo>/.claude/skills/pen2ppt/` with `package.json` (dep: `dom-to-pptx`) and `node_modules` installed (pulls `puppeteer` + a bundled Chromium).
-- Outputs land in `<repo>/exports/`.
-- If `node_modules` is missing: `cd <repo>/.claude/skills/pen2ppt && npm install`.
+- `<skill>` below = the directory containing this SKILL.md, wherever the agent has it installed (e.g. `~/.agents/skills/pen2ppt`, `<project>/.agents/skills/pen2ppt`, `.claude/skills/pen2ppt`). Its `package.json` (deps: `dom-to-pptx`, `jszip`) needs `node_modules` installed (pulls `puppeteer` + a bundled Chromium). If missing: `cd <skill> && npm install`.
+- `<project>` below = the directory containing the `.pen` file being converted. It is only read — outputs never land there; everything goes to the pen2ppt **workspace** (step 0).
 
-**Run the Node scripts from the skill directory** (or via absolute path) so its `node_modules` resolve. Below, `<skill>` = `<repo>/.claude/skills/pen2ppt`, `<repo>` = project root containing the `.pen`.
+**Invoke Node scripts by their absolute `<skill>` path** (e.g. `node <skill>/scripts/build-combined.mjs ...`); bare imports resolve from the skill's own `node_modules` regardless of cwd.
 
 ## Run steps
+
+0. **Resolve the export workspace.** Everything the pipeline writes (per-frame HTML, image assets, `combined.html`, the `.pptx`) goes under one shared workspace directory, in a per-deck subfolder. Run:
+   ```
+   W=$(node <skill>/scripts/workspace.mjs dir <name>)
+   ```
+   It prints `<workspace>/<name>` (created on demand) — use it as `$W` below. If it fails with "workspace not configured", this is the first run: **ask the user where exports should live** (suggest a default such as `~/pen2ppt-exports`), persist the choice with `node <skill>/scripts/workspace.mjs set "<path>"`, then re-run `dir`. The `PEN2PPT_WORKSPACE` env var always overrides the saved config (`~/.config/pen2ppt/workspace`).
 
 1. **Pick the slides, read their sizes, and pre-compute the deviation warning.** pencil `batch_get` the active `.pen`'s top-level frames (the Slides-panel entries), in slide order (fallback: canvas reading order). For each, record `nodeId`, `name`, native `width`/`height`. For each frame whose aspect ratio (`width/height`) differs from `16/9` by more than ~1%, note a deviation — you'll surface these to the user in the final report. (This authoritative check also covers `h-fit`/auto-height frames that the stitch script can't size from HTML.)
 
 2. **Export each frame to HTML** (pencil `export_html`, `format: "html-tailwind"`, scaffold on), one per frame, in slide order:
-   - `<repo>/exports/slide-01.html`, `slide-02.html`, … (zero-padded).
-   - Image fills land as relative-path assets next to the HTML — keep them in `exports/`.
+   - `$W/slide-01.html`, `slide-02.html`, … (zero-padded).
+   - Image fills land as relative-path assets next to the HTML — keep them under `$W/`.
 
 3. **Stitch** at native size (no scaling here; conversion is at export):
    ```
-   cd <skill>
-   node scripts/build-combined.mjs --out <repo>/exports/combined.html \
-        <repo>/exports/slide-01.html <repo>/exports/slide-02.html ...
+   node <skill>/scripts/build-combined.mjs --out "$W/combined.html" \
+        "$W"/slide-01.html "$W"/slide-02.html ...
    ```
    Pass files explicitly in slide order. The script also prints best-effort `WARN:` lines for frames it can size.
 
 4. **Render to PPTX** at fixed 16:9 (always use `export-pptx.mjs`, never the `dom-to-pptx-exporter` CLI — see Troubleshooting):
    ```
-   node scripts/export-pptx.mjs <repo>/exports/combined.html \
-        -o <repo>/exports/<name>.pptx --selector .slide
+   node <skill>/scripts/export-pptx.mjs "$W/combined.html" \
+        -o "$W/<name>.pptx" --selector .slide
    ```
    Deck defaults to 13.333×7.5 in (1280×720). Override with `--width <in> --height <in>` only if the user wants a different 16:9 size (e.g. 1920×1080 → `--width 20 --height 11.25`); keep the 16:9 ratio.
 
@@ -57,6 +61,7 @@ Closes the loop `.pen → HTML → PPTX`. The first half (`.pen → HTML`) is pr
 - Output name → `<name>.pptx` (default `deck.pptx`).
 - Slide selection / order ("only the cover and agenda", "slide 3 first") → export those nodeIds in that order.
 - Different 16:9 size ("use 1920×1080") → pass `--width 20 --height 11.25` to `export-pptx.mjs`. (Still 16:9.)
+- Change the default export location ("export everything to D:\decks from now on") → `node <skill>/scripts/workspace.mjs set "<path>"`; applies to all future runs.
 
 ## Fidelity (set expectations)
 
@@ -69,7 +74,7 @@ Closes the loop `.pen → HTML → PPTX`. The first half (`.pen → HTML`) is pr
 
 - **`Failed to launch headless browser ... Code: 0` / it picks Microsoft Edge.** `dom-to-pptx@2.0.3` mis-handles `puppeteer@25`'s async `executablePath()` and falls back to Edge, which fails to launch here. Always use `scripts/export-pptx.mjs` (launches the bundled Chromium with `--no-sandbox` + a fresh `--user-data-dir`). If launch still fails, force a binary: `--browser "C:/path/to/chrome.exe"` (or set `PUPPETEER_EXECUTABLE_PATH`).
 - **Fonts or Tailwind look wrong.** Both load from CDN at render time — export needs internet. Offline: fonts fall back to system; layout survives but appearance shifts. (Offline inlining is a future enhancement.)
-- **Garbled CJK text / substituted Latin fonts in WPS (or on machines without the web fonts).** The design's web fonts are referenced by name only (never embedded), and PptxGenJS fills all three script slots (`a:latin`/`a:ea`/`a:cs`) with the first font of the CSS stack. `export-pptx.mjs` therefore auto-runs a font fix after writing the deck (`scripts/fix-cjk-fonts.mjs`, see `WPS-CJK-FONT-FIX.md`): every `a:ea` slot → `Microsoft YaHei` (incl. theme `+mn-ea`/empty slots), known web fonts in `a:latin`/`a:cs` → system equivalents (Noto Sans→Arial, Anton→Impact, Inter/Roboto/Geist→Arial…, case-insensitive), CJK runs → `lang="zh-CN"`. Tune with `--ea-font`, `--map "From=To"` (repeatable), `--no-latin-map`; disable with `--no-font-fix`. To repair an older deck: `node scripts/fix-cjk-fonts.mjs old.pptx [--dry] [--out fixed.pptx]`.
+- **Garbled CJK text / substituted Latin fonts in WPS (or on machines without the web fonts).** The design's web fonts are referenced by name only (never embedded), and PptxGenJS fills all three script slots (`a:latin`/`a:ea`/`a:cs`) with the first font of the CSS stack. `export-pptx.mjs` therefore auto-runs a font fix after writing the deck (`scripts/fix-cjk-fonts.mjs`, see `references/WPS-CJK-FONT-FIX.md`): every `a:ea` slot → `Microsoft YaHei` (incl. theme `+mn-ea`/empty slots), known web fonts in `a:latin`/`a:cs` → system equivalents (Noto Sans→Arial, Anton→Impact, Inter/Roboto/Geist→Arial…, case-insensitive), CJK runs → `lang="zh-CN"`. Tune with `--ea-font`, `--map "From=To"` (repeatable), `--no-latin-map`; disable with `--no-font-fix`. To repair an older deck: `node scripts/fix-cjk-fonts.mjs old.pptx [--dry] [--out fixed.pptx]`.
 - **A slide has empty side/top bars.** Expected for non-16:9 slides (contain-fit letterboxing). Re-author the slide to 16:9 in Pencil for a full-bleed page, or accept the bars.
 - **Text isn't editable in PowerPoint.** Confirm you used `export-pptx.mjs` (it calls `exportToPptx(..., { skipDownload: true })` and writes the returned buffer) and that the source HTML had real text nodes (Pencil `text`), not flattened images.
 - **Images missing from the PPTX.** The page loads via `file://`; dom-to-pptx rasterizes images to a canvas with `crossOrigin='Anonymous'`, and a `file://` image taints it → picture silently skipped. `export-pptx.mjs` already inlines local images as base64 before render — if a picture is still missing, check the `<img src>` / `url()` ref resolves relative to the combined HTML, or that the remote URL sends CORS headers.
@@ -78,8 +83,10 @@ Closes the loop `.pen → HTML → PPTX`. The first half (`.pen → HTML`) is pr
 
 ## Files
 
+- `scripts/workspace.mjs` — shared export-workspace resolution: `PEN2PPT_WORKSPACE` env var, else the config file `~/.config/pen2ppt/workspace`. CLI: `get` (print root, exit 1 if unset), `set <path>` (persist + create), `dir [name]` (print/create a per-deck subdir). `build-combined.mjs` and `export-pptx.mjs` import `resolveWorkspace()` for their default paths.
 - `scripts/build-combined.mjs` — stitches per-frame `export_html` files into one `combined.html` of native-size `<section class="slide">` elements (shared Tailwind + Fonts head). Prints best-effort deviation warnings. Copies referenced local image assets next to the output.
 - `scripts/export-pptx.mjs` — headless Chromium (bundled) + dom-to-pptx browser bundle → fixed-16:9 `.pptx` → file. Before converting it (1) inlines local images as base64 (avoids `file://` canvas taint) and (2) layout-freezes every slide element to its rendered pixel rect (fixes flex mis-measurement: oversized images, collapsed bars). Injects a patched dom-to-pptx bundle (native image embedding, on by default; `--no-native-images` opts out).
 - `scripts/native-image-patch.mjs` — in-memory string surgery on the dom-to-pptx bundle (node_modules untouched). (1) `<img>` / background-image call sites embed the original image bytes with PowerPoint-native `srcRect` cropping when CSS semantics allow; (2) the raster fallback renders at native resolution instead of fixed 2×. Patches match exact `dom-to-pptx@2.0.3` bundle text and skip with a WARN on dependency upgrades.
-- `scripts/fix-cjk-fonts.mjs` — post-export zip-layer font fix for WPS/missing-font machines (auto-run by `export-pptx.mjs`; standalone CLI for old decks). Rewrites `a:ea` → CJK system font (incl. theme/empty/`+mn-ea` slots), maps known web fonts in `a:latin`/`a:cs` to system equivalents (case-insensitive), tags CJK runs `lang="zh-CN"`. Details: `WPS-CJK-FONT-FIX.md` (repo root).
+- `scripts/fix-cjk-fonts.mjs` — post-export zip-layer font fix for WPS/missing-font machines (auto-run by `export-pptx.mjs`; standalone CLI for old decks). Rewrites `a:ea` → CJK system font (incl. theme/empty/`+mn-ea` slots), maps known web fonts in `a:latin`/`a:cs` to system equivalents (case-insensitive), tags CJK runs `lang="zh-CN"`. Details: `references/WPS-CJK-FONT-FIX.md`.
+- `references/WPS-CJK-FONT-FIX.md` — background on the WPS CJK font problem and what the fix rewrites. Read when tuning `--ea-font` / `--map` or repairing old decks.
 - `package.json` — dependencies: `dom-to-pptx` (brings puppeteer + Chromium), `jszip` (font fix).
