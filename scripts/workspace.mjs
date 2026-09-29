@@ -25,6 +25,9 @@ import { spawnSync } from 'node:child_process';
 
 export const ENV_VAR = 'PEN2PPT_WORKSPACE';
 
+// Reserved directory inside the workspace holding the user's personal templates.
+export const USER_TEMPLATES_DIRNAME = '_templates';
+
 const expandHome = (p) =>
   p === '~' || p.startsWith('~/') || p.startsWith('~\\')
     ? path.join(os.homedir(), p.slice(2))
@@ -54,18 +57,26 @@ export function resolveWorkspace() {
   return null;
 }
 
+// Names that must never become a deck directory inside the workspace.
+const RESERVED = new Set([USER_TEMPLATES_DIRNAME]);
+
+export const slugify = (name) =>
+  String(name || 'deck')
+    .trim()
+    .replace(/[\\/:*?"<>|]+/g, '-')
+    .replace(/\s+/g, '-')
+    .replace(/-{2,}/g, '-')
+    .replace(/^[-.]+|[-.]+$/g, '') || 'deck';
+
 // <workspace>/<slug(name)> — one subdirectory per deck so parallel exports
 // never collide on slide-01.html. Creates the directory.
 export function deckDir(name) {
   const root = resolveWorkspace();
   if (!root) return null;
-  const slug =
-    String(name || 'deck')
-      .trim()
-      .replace(/[\\/:*?"<>|]+/g, '-')
-      .replace(/\s+/g, '-')
-      .replace(/-{2,}/g, '-')
-      .replace(/^[-.]+|[-.]+$/g, '') || 'deck';
+  const slug = slugify(name);
+  if (RESERVED.has(slug.toLowerCase())) {
+    throw new Error(`"${slug}" is reserved inside the workspace; pick another deck name.`);
+  }
   const dir = path.join(root, slug);
   fs.mkdirSync(dir, { recursive: true });
   return dir;

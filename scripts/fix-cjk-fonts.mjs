@@ -38,12 +38,20 @@ const XML_TARGET = /^ppt\/(slides\/slide|notesSlides\/notesSlide|slideLayouts\/s
 // System equivalents for common web fonts (matched case-insensitively).
 export const DEFAULT_LATIN_EQUIVALENTS = {
   'Noto Sans SC': 'Microsoft YaHei',
+  'Noto Serif SC': 'NSimSun',
   'Noto Sans': 'Arial',
   'Anton': 'Impact',
   'Inter': 'Arial',
+  'Inter Tight': 'Arial',
   'Roboto': 'Arial',
   'Geist': 'Arial',
   'Geist Mono': 'Courier New',
+  'JetBrains Mono': 'Consolas',
+  'Instrument Serif': 'Georgia',
+  'Source Serif 4': 'Georgia',
+  'Playfair Display': 'Georgia',
+  'Newsreader': 'Georgia',
+  'Fraunces': 'Georgia',
 };
 
 export const DEFAULT_EA_FONT = 'Microsoft YaHei';

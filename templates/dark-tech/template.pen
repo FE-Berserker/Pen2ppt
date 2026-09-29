@@ -1,0 +1,7310 @@
+{
+  "version": "2.17",
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#22D3EE"
+    },
+    "accent-deep": {
+      "type": "color",
+      "value": "#6366F1"
+    },
+    "ink": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "gray": {
+      "type": "color",
+      "value": "#FFFFFFA6"
+    },
+    "faint": {
+      "type": "color",
+      "value": "#94A3B8"
+    },
+    "line": {
+      "type": "color",
+      "value": "#1E293B"
+    },
+    "tint": {
+      "type": "color",
+      "value": "#111A2E"
+    },
+    "paper": {
+      "type": "color",
+      "value": "#050B1F"
+    },
+    "soft": {
+      "type": "color",
+      "value": "#22D3EE14"
+    },
+    "halo": {
+      "type": "color",
+      "value": "#22D3EE33"
+    },
+    "ghost": {
+      "type": "color",
+      "value": "#FFFFFF0D"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Inter Tight"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-serif": {
+      "type": "string",
+      "value": "Instrument Serif"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "JetBrains Mono"
+    }
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "sk73",
+      "x": 0,
+      "y": 0,
+      "name": "01 封面 Cover",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk01",
+          "x": 624,
+          "y": -184,
+          "name": "封面 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk02",
+          "x": -94,
+          "y": 154,
+          "name": "封面 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk03",
+          "x": 80,
+          "y": 0,
+          "name": "封面 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk04",
+          "x": 160,
+          "y": 0,
+          "name": "封面 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk05",
+          "x": 240,
+          "y": 0,
+          "name": "封面 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk06",
+          "x": 320,
+          "y": 0,
+          "name": "封面 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk07",
+          "x": 400,
+          "y": 0,
+          "name": "封面 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk08",
+          "x": 480,
+          "y": 0,
+          "name": "封面 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk09",
+          "x": 560,
+          "y": 0,
+          "name": "封面 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk10",
+          "x": 640,
+          "y": 0,
+          "name": "封面 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk11",
+          "x": 720,
+          "y": 0,
+          "name": "封面 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk12",
+          "x": 800,
+          "y": 0,
+          "name": "封面 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk13",
+          "x": 880,
+          "y": 0,
+          "name": "封面 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk14",
+          "x": 960,
+          "y": 0,
+          "name": "封面 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk15",
+          "x": 1040,
+          "y": 0,
+          "name": "封面 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk16",
+          "x": 1120,
+          "y": 0,
+          "name": "封面 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk17",
+          "x": 1200,
+          "y": 0,
+          "name": "封面 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk18",
+          "x": 0,
+          "y": 80,
+          "name": "封面 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk19",
+          "x": 0,
+          "y": 160,
+          "name": "封面 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk20",
+          "x": 0,
+          "y": 240,
+          "name": "封面 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk21",
+          "x": 0,
+          "y": 320,
+          "name": "封面 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk22",
+          "x": 0,
+          "y": 400,
+          "name": "封面 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk23",
+          "x": 0,
+          "y": 480,
+          "name": "封面 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk24",
+          "x": 0,
+          "y": 560,
+          "name": "封面 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk25",
+          "x": 0,
+          "y": 640,
+          "name": "封面 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk26",
+          "x": 0,
+          "y": 719,
+          "name": "封面 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk27",
+          "x": 22,
+          "y": 22,
+          "name": "封面 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk28",
+          "x": 22,
+          "y": 22,
+          "name": "封面 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk29",
+          "x": 1242,
+          "y": 22,
+          "name": "封面 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk30",
+          "x": 1257,
+          "y": 22,
+          "name": "封面 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk31",
+          "x": 22,
+          "y": 697,
+          "name": "封面 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk32",
+          "x": 22,
+          "y": 682,
+          "name": "封面 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk33",
+          "x": 1242,
+          "y": 697,
+          "name": "封面 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk34",
+          "x": 1257,
+          "y": 682,
+          "name": "封面 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk35",
+          "x": 80,
+          "y": 430,
+          "name": "封面 中光线",
+          "width": 1120,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk36",
+          "x": 80,
+          "y": 56,
+          "name": "封面 Logo块",
+          "width": 22,
+          "height": 22,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 135,
+            "colors": [
+              {
+                "color": "$accent",
+                "position": 0
+              },
+              {
+                "color": "$accent-deep",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 6
+        },
+        {
+          "type": "rectangle",
+          "id": "sk37",
+          "x": 86,
+          "y": 62,
+          "name": "封面 Logo芯",
+          "width": 10,
+          "height": 10,
+          "fill": "#00000000",
+          "cornerRadius": 2,
+          "stroke": "#FFFFFFF2",
+          "strokeWidth": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk38",
+          "x": 112,
+          "y": 58,
+          "name": "封面 品牌",
+          "content": "Pencil",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "letterSpacing": -0.3
+        },
+        {
+          "type": "text",
+          "id": "sk39",
+          "x": 158,
+          "y": 58,
+          "name": "封面 品牌斜体",
+          "content": "Template",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 15,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "sk40",
+          "x": 980,
+          "y": 60,
+          "name": "封面 导航",
+          "content": "模板 · 使用 · 导出",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "500",
+          "textGrowth": "fixed-width",
+          "width": 220,
+          "textAlign": "right"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk41",
+          "x": 80,
+          "y": 153,
+          "name": "封面 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk42",
+          "x": 77,
+          "y": 147,
+          "name": "封面 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk43",
+          "x": 97,
+          "y": 150,
+          "name": "封面 眉标",
+          "content": "PART 01 · PENCIL TEMPLATE",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk44",
+          "x": 78,
+          "y": 182,
+          "name": "封面 标题",
+          "content": "基于Pencil的PPT模板",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 64,
+          "fontWeight": "800",
+          "letterSpacing": -2
+        },
+        {
+          "type": "text",
+          "id": "sk45",
+          "x": 80,
+          "y": 262,
+          "name": "封面 斜体副题",
+          "content": "“基于AI的 PPT 模板”",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 38,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "sk46",
+          "x": 80,
+          "y": 340,
+          "name": "封面 汇报人",
+          "content": "汇报人：Baffalo",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk47",
+          "x": 80,
+          "y": 368,
+          "name": "封面 日期",
+          "content": "发布时间：2026年4月22日",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk48",
+          "x": 80,
+          "y": 470,
+          "name": "封面 数据顶线",
+          "width": 760,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk49",
+          "x": 80,
+          "y": 500,
+          "name": "封面 数PAGE TYPES",
+          "content": "10",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 44,
+          "fontWeight": "700",
+          "letterSpacing": -1.7
+        },
+        {
+          "type": "text",
+          "id": "sk50",
+          "x": 140,
+          "y": 514,
+          "name": "封面 单位PAGE TYPES",
+          "content": "种",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 22,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "sk51",
+          "x": 80,
+          "y": 556,
+          "name": "封面 标签PAGE TYPES",
+          "content": "PAGE TYPES",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "500",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk52",
+          "x": 340,
+          "y": 500,
+          "name": "封面 数FONT PAIRINGS",
+          "content": "2",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 44,
+          "fontWeight": "700",
+          "letterSpacing": -1.7
+        },
+        {
+          "type": "text",
+          "id": "sk53",
+          "x": 373,
+          "y": 514,
+          "name": "封面 单位FONT PAIRINGS",
+          "content": "组",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 22,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "sk54",
+          "x": 340,
+          "y": 556,
+          "name": "封面 标签FONT PAIRINGS",
+          "content": "FONT PAIRINGS",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "500",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk55",
+          "x": 600,
+          "y": 500,
+          "name": "封面 数EDITABLE TEXT",
+          "content": "100",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 44,
+          "fontWeight": "700",
+          "letterSpacing": -1.7
+        },
+        {
+          "type": "text",
+          "id": "sk56",
+          "x": 687,
+          "y": 514,
+          "name": "封面 单位EDITABLE TEXT",
+          "content": "%",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 22,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "sk57",
+          "x": 600,
+          "y": 556,
+          "name": "封面 标签EDITABLE TEXT",
+          "content": "EDITABLE TEXT",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "500",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk58",
+          "x": 300,
+          "y": 504,
+          "name": "封面 数据隔线1",
+          "width": 1,
+          "height": 56,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk59",
+          "x": 560,
+          "y": 504,
+          "name": "封面 数据隔线2",
+          "width": 1,
+          "height": 56,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk60",
+          "x": 80,
+          "y": 600,
+          "name": "封面 徽章代码高亮",
+          "width": 104,
+          "height": 26,
+          "fill": "$soft",
+          "cornerRadius": 4,
+          "stroke": "#22D3EE4D",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "sk61",
+          "x": 80,
+          "y": 607,
+          "name": "封面 徽章字代码高亮",
+          "content": "代码高亮",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 104,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk62",
+          "x": 198,
+          "y": 600,
+          "name": "封面 徽章流程图",
+          "width": 104,
+          "height": 26,
+          "fill": "#FFFFFF11",
+          "cornerRadius": 4,
+          "stroke": "$line",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "sk63",
+          "x": 198,
+          "y": 607,
+          "name": "封面 徽章字流程图",
+          "content": "流程图",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 104,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk64",
+          "x": 316,
+          "y": 600,
+          "name": "封面 徽章表格",
+          "width": 104,
+          "height": 26,
+          "fill": "#FFFFFF11",
+          "cornerRadius": 4,
+          "stroke": "$line",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "sk65",
+          "x": 316,
+          "y": 607,
+          "name": "封面 徽章字表格",
+          "content": "表格",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 104,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk66",
+          "x": 434,
+          "y": 600,
+          "name": "封面 徽章引用盒",
+          "width": 104,
+          "height": 26,
+          "fill": "#FFFFFF11",
+          "cornerRadius": 4,
+          "stroke": "$line",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "sk67",
+          "x": 434,
+          "y": 607,
+          "name": "封面 徽章字引用盒",
+          "content": "引用盒",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 104,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk68",
+          "x": 1064,
+          "y": 584,
+          "name": "封面 CTA",
+          "width": 136,
+          "height": 44,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "$accent",
+                "position": 0
+              },
+              {
+                "color": "$accent-deep",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 999
+        },
+        {
+          "type": "text",
+          "id": "sk69",
+          "x": 1064,
+          "y": 597,
+          "name": "封面 CTA字",
+          "content": "开始使用 →",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 136,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk70",
+          "x": 80,
+          "y": 678,
+          "name": "封面 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk71",
+          "x": 80,
+          "y": 690,
+          "name": "封面 页脚左",
+          "content": "PART 01 · COVER",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk72",
+          "x": 1000,
+          "y": 690,
+          "name": "封面 页脚右",
+          "content": "01 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk157",
+      "x": 1360,
+      "y": 0,
+      "name": "02 目录 Contents",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk74",
+          "x": 624,
+          "y": -184,
+          "name": "目录 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk75",
+          "x": -94,
+          "y": 154,
+          "name": "目录 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk76",
+          "x": 80,
+          "y": 0,
+          "name": "目录 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk77",
+          "x": 160,
+          "y": 0,
+          "name": "目录 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk78",
+          "x": 240,
+          "y": 0,
+          "name": "目录 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk79",
+          "x": 320,
+          "y": 0,
+          "name": "目录 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk80",
+          "x": 400,
+          "y": 0,
+          "name": "目录 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk81",
+          "x": 480,
+          "y": 0,
+          "name": "目录 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk82",
+          "x": 560,
+          "y": 0,
+          "name": "目录 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk83",
+          "x": 640,
+          "y": 0,
+          "name": "目录 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk84",
+          "x": 720,
+          "y": 0,
+          "name": "目录 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk85",
+          "x": 800,
+          "y": 0,
+          "name": "目录 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk86",
+          "x": 880,
+          "y": 0,
+          "name": "目录 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk87",
+          "x": 960,
+          "y": 0,
+          "name": "目录 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk88",
+          "x": 1040,
+          "y": 0,
+          "name": "目录 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk89",
+          "x": 1120,
+          "y": 0,
+          "name": "目录 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk90",
+          "x": 1200,
+          "y": 0,
+          "name": "目录 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk91",
+          "x": 0,
+          "y": 80,
+          "name": "目录 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk92",
+          "x": 0,
+          "y": 160,
+          "name": "目录 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk93",
+          "x": 0,
+          "y": 240,
+          "name": "目录 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk94",
+          "x": 0,
+          "y": 320,
+          "name": "目录 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk95",
+          "x": 0,
+          "y": 400,
+          "name": "目录 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk96",
+          "x": 0,
+          "y": 480,
+          "name": "目录 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk97",
+          "x": 0,
+          "y": 560,
+          "name": "目录 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk98",
+          "x": 0,
+          "y": 640,
+          "name": "目录 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk99",
+          "x": 0,
+          "y": 719,
+          "name": "目录 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk100",
+          "x": 22,
+          "y": 22,
+          "name": "目录 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk101",
+          "x": 22,
+          "y": 22,
+          "name": "目录 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk102",
+          "x": 1242,
+          "y": 22,
+          "name": "目录 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk103",
+          "x": 1257,
+          "y": 22,
+          "name": "目录 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk104",
+          "x": 22,
+          "y": 697,
+          "name": "目录 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk105",
+          "x": 22,
+          "y": 682,
+          "name": "目录 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk106",
+          "x": 1242,
+          "y": 697,
+          "name": "目录 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk107",
+          "x": 1257,
+          "y": 682,
+          "name": "目录 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "text",
+          "id": "sk108",
+          "x": 66,
+          "y": 40,
+          "name": "目录 幽灵字",
+          "content": "Contents",
+          "fill": "$ghost",
+          "fontFamily": "$font-serif",
+          "fontSize": 110,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk109",
+          "x": 80,
+          "y": 203,
+          "name": "目录 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk110",
+          "x": 77,
+          "y": 197,
+          "name": "目录 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk111",
+          "x": 97,
+          "y": 200,
+          "name": "目录 眉标",
+          "content": "PART 02 · CONTENTS",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk112",
+          "x": 78,
+          "y": 232,
+          "name": "目录 标题",
+          "content": "PPT模板内容",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk113",
+          "x": 80,
+          "y": 284,
+          "name": "目录 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk114",
+          "x": 80,
+          "y": 316,
+          "name": "目录 圈1",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk115",
+          "x": 80,
+          "y": 321,
+          "name": "目录 圈字1",
+          "content": "1",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk116",
+          "x": 120,
+          "y": 319,
+          "name": "目录 条目1",
+          "content": "封面页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk117",
+          "x": 80,
+          "y": 360,
+          "name": "目录 行线1",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk118",
+          "x": 640,
+          "y": 316,
+          "name": "目录 圈2",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk119",
+          "x": 640,
+          "y": 321,
+          "name": "目录 圈字2",
+          "content": "2",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk120",
+          "x": 680,
+          "y": 319,
+          "name": "目录 条目2",
+          "content": "目录页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk121",
+          "x": 640,
+          "y": 360,
+          "name": "目录 行线2",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk122",
+          "x": 80,
+          "y": 382,
+          "name": "目录 圈3",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk123",
+          "x": 80,
+          "y": 387,
+          "name": "目录 圈字3",
+          "content": "3",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk124",
+          "x": 120,
+          "y": 385,
+          "name": "目录 条目3",
+          "content": "关于模板 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk125",
+          "x": 80,
+          "y": 426,
+          "name": "目录 行线3",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk126",
+          "x": 640,
+          "y": 382,
+          "name": "目录 圈4",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk127",
+          "x": 640,
+          "y": 387,
+          "name": "目录 圈字4",
+          "content": "4",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk128",
+          "x": 680,
+          "y": 385,
+          "name": "目录 条目4",
+          "content": "两栏图文页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk129",
+          "x": 640,
+          "y": 426,
+          "name": "目录 行线4",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk130",
+          "x": 80,
+          "y": 448,
+          "name": "目录 圈5",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk131",
+          "x": 80,
+          "y": 453,
+          "name": "目录 圈字5",
+          "content": "5",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk132",
+          "x": 120,
+          "y": 451,
+          "name": "目录 条目5",
+          "content": "品字型分栏页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk133",
+          "x": 80,
+          "y": 492,
+          "name": "目录 行线5",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk134",
+          "x": 640,
+          "y": 448,
+          "name": "目录 圈6",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk135",
+          "x": 640,
+          "y": 453,
+          "name": "目录 圈字6",
+          "content": "6",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk136",
+          "x": 680,
+          "y": 451,
+          "name": "目录 条目6",
+          "content": "引用、链接和引用盒子 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk137",
+          "x": 640,
+          "y": 492,
+          "name": "目录 行线6",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk138",
+          "x": 80,
+          "y": 514,
+          "name": "目录 圈7",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk139",
+          "x": 80,
+          "y": 519,
+          "name": "目录 圈字7",
+          "content": "7",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk140",
+          "x": 120,
+          "y": 517,
+          "name": "目录 条目7",
+          "content": "代码块高亮 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk141",
+          "x": 80,
+          "y": 558,
+          "name": "目录 行线7",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk142",
+          "x": 640,
+          "y": 514,
+          "name": "目录 圈8",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk143",
+          "x": 640,
+          "y": 519,
+          "name": "目录 圈字8",
+          "content": "8",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk144",
+          "x": 680,
+          "y": 517,
+          "name": "目录 条目8",
+          "content": "流程图示例 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk145",
+          "x": 640,
+          "y": 558,
+          "name": "目录 行线8",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk146",
+          "x": 80,
+          "y": 580,
+          "name": "目录 圈9",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk147",
+          "x": 80,
+          "y": 585,
+          "name": "目录 圈字9",
+          "content": "9",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk148",
+          "x": 120,
+          "y": 583,
+          "name": "目录 条目9",
+          "content": "表格页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk149",
+          "x": 80,
+          "y": 624,
+          "name": "目录 行线9",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk150",
+          "x": 640,
+          "y": 580,
+          "name": "目录 圈10",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk151",
+          "x": 640,
+          "y": 585,
+          "name": "目录 圈字10",
+          "content": "10",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk152",
+          "x": 680,
+          "y": 583,
+          "name": "目录 条目10",
+          "content": "感谢页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk153",
+          "x": 640,
+          "y": 624,
+          "name": "目录 行线10",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk154",
+          "x": 80,
+          "y": 678,
+          "name": "目录 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk155",
+          "x": 80,
+          "y": 690,
+          "name": "目录 页脚左",
+          "content": "PART 02 · CONTENTS",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk156",
+          "x": 1000,
+          "y": 690,
+          "name": "目录 页脚右",
+          "content": "02 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk206",
+      "x": 2720,
+      "y": 0,
+      "name": "03 关于 About",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk158",
+          "x": 624,
+          "y": -184,
+          "name": "关于 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk159",
+          "x": -94,
+          "y": 154,
+          "name": "关于 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk160",
+          "x": 80,
+          "y": 0,
+          "name": "关于 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk161",
+          "x": 160,
+          "y": 0,
+          "name": "关于 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk162",
+          "x": 240,
+          "y": 0,
+          "name": "关于 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk163",
+          "x": 320,
+          "y": 0,
+          "name": "关于 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk164",
+          "x": 400,
+          "y": 0,
+          "name": "关于 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk165",
+          "x": 480,
+          "y": 0,
+          "name": "关于 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk166",
+          "x": 560,
+          "y": 0,
+          "name": "关于 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk167",
+          "x": 640,
+          "y": 0,
+          "name": "关于 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk168",
+          "x": 720,
+          "y": 0,
+          "name": "关于 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk169",
+          "x": 800,
+          "y": 0,
+          "name": "关于 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk170",
+          "x": 880,
+          "y": 0,
+          "name": "关于 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk171",
+          "x": 960,
+          "y": 0,
+          "name": "关于 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk172",
+          "x": 1040,
+          "y": 0,
+          "name": "关于 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk173",
+          "x": 1120,
+          "y": 0,
+          "name": "关于 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk174",
+          "x": 1200,
+          "y": 0,
+          "name": "关于 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk175",
+          "x": 0,
+          "y": 80,
+          "name": "关于 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk176",
+          "x": 0,
+          "y": 160,
+          "name": "关于 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk177",
+          "x": 0,
+          "y": 240,
+          "name": "关于 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk178",
+          "x": 0,
+          "y": 320,
+          "name": "关于 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk179",
+          "x": 0,
+          "y": 400,
+          "name": "关于 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk180",
+          "x": 0,
+          "y": 480,
+          "name": "关于 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk181",
+          "x": 0,
+          "y": 560,
+          "name": "关于 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk182",
+          "x": 0,
+          "y": 640,
+          "name": "关于 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk183",
+          "x": 0,
+          "y": 719,
+          "name": "关于 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk184",
+          "x": 22,
+          "y": 22,
+          "name": "关于 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk185",
+          "x": 22,
+          "y": 22,
+          "name": "关于 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk186",
+          "x": 1242,
+          "y": 22,
+          "name": "关于 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk187",
+          "x": 1257,
+          "y": 22,
+          "name": "关于 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk188",
+          "x": 22,
+          "y": 697,
+          "name": "关于 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk189",
+          "x": 22,
+          "y": 682,
+          "name": "关于 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk190",
+          "x": 1242,
+          "y": 697,
+          "name": "关于 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk191",
+          "x": 1257,
+          "y": 682,
+          "name": "关于 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk192",
+          "x": 80,
+          "y": 67,
+          "name": "关于 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk193",
+          "x": 77,
+          "y": 61,
+          "name": "关于 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk194",
+          "x": 97,
+          "y": 64,
+          "name": "关于 眉标",
+          "content": "PART 03 · ABOUT",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk195",
+          "x": 78,
+          "y": 96,
+          "name": "关于 标题",
+          "content": "关于模板",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk196",
+          "x": 80,
+          "y": 148,
+          "name": "关于 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk197",
+          "x": 80,
+          "y": 182,
+          "name": "关于 正文",
+          "content": "在AI时代来临之前，我一直使用Marp工具来生成我的PPT，这份模板的灵感也是来自于Awesome Marp（https://github.com/favourhong/Awesome-Marp）的开源项目，这份模板一直是我用起来最顺手的。但是Marp并不适合于所有人，上手有一定的门槛。\n\nAI改变了一切。Pencil是一个由AI驱动的画布工具，且AI生成的每一个元素都是支持交互更改的，它几乎弥补了Marp所有的缺点。于是我将Awesome Marp模板导入其中，让AI提取设计语言并生成，效果很好，也添加了原有模板不具备的功能，比如代码高亮和流程图。\n\n基于这份模板，您可以很方便地打造自己的PPT。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 760,
+          "lineHeight": 1.8
+        },
+        {
+          "type": "rectangle",
+          "id": "sk198",
+          "x": 896,
+          "y": 182,
+          "name": "关于 侧栏",
+          "width": 304,
+          "height": 200,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "text",
+          "id": "sk199",
+          "x": 924,
+          "y": 210,
+          "name": "关于 侧栏标",
+          "content": "INSPIRATION",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk200",
+          "x": 922,
+          "y": 236,
+          "name": "关于 侧栏题",
+          "content": "Awesome Marp",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 26,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "sk201",
+          "x": 924,
+          "y": 286,
+          "name": "关于 侧栏文",
+          "content": "github.com/favourhong",
+          "fill": "$gray",
+          "fontFamily": "$font-mono",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk202",
+          "x": 924,
+          "y": 308,
+          "name": "关于 侧栏文2",
+          "content": "/Awesome-Marp",
+          "fill": "$gray",
+          "fontFamily": "$font-mono",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk203",
+          "x": 80,
+          "y": 678,
+          "name": "关于 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk204",
+          "x": 80,
+          "y": 690,
+          "name": "关于 页脚左",
+          "content": "PART 03 · ABOUT",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk205",
+          "x": 1000,
+          "y": 690,
+          "name": "关于 页脚右",
+          "content": "03 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk253",
+      "x": 4080,
+      "y": 0,
+      "name": "04 正文·双栏 Two Columns",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk207",
+          "x": 624,
+          "y": -184,
+          "name": "双栏 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk208",
+          "x": -94,
+          "y": 154,
+          "name": "双栏 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk209",
+          "x": 80,
+          "y": 0,
+          "name": "双栏 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk210",
+          "x": 160,
+          "y": 0,
+          "name": "双栏 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk211",
+          "x": 240,
+          "y": 0,
+          "name": "双栏 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk212",
+          "x": 320,
+          "y": 0,
+          "name": "双栏 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk213",
+          "x": 400,
+          "y": 0,
+          "name": "双栏 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk214",
+          "x": 480,
+          "y": 0,
+          "name": "双栏 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk215",
+          "x": 560,
+          "y": 0,
+          "name": "双栏 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk216",
+          "x": 640,
+          "y": 0,
+          "name": "双栏 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk217",
+          "x": 720,
+          "y": 0,
+          "name": "双栏 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk218",
+          "x": 800,
+          "y": 0,
+          "name": "双栏 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk219",
+          "x": 880,
+          "y": 0,
+          "name": "双栏 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk220",
+          "x": 960,
+          "y": 0,
+          "name": "双栏 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk221",
+          "x": 1040,
+          "y": 0,
+          "name": "双栏 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk222",
+          "x": 1120,
+          "y": 0,
+          "name": "双栏 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk223",
+          "x": 1200,
+          "y": 0,
+          "name": "双栏 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk224",
+          "x": 0,
+          "y": 80,
+          "name": "双栏 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk225",
+          "x": 0,
+          "y": 160,
+          "name": "双栏 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk226",
+          "x": 0,
+          "y": 240,
+          "name": "双栏 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk227",
+          "x": 0,
+          "y": 320,
+          "name": "双栏 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk228",
+          "x": 0,
+          "y": 400,
+          "name": "双栏 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk229",
+          "x": 0,
+          "y": 480,
+          "name": "双栏 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk230",
+          "x": 0,
+          "y": 560,
+          "name": "双栏 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk231",
+          "x": 0,
+          "y": 640,
+          "name": "双栏 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk232",
+          "x": 0,
+          "y": 719,
+          "name": "双栏 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk233",
+          "x": 22,
+          "y": 22,
+          "name": "双栏 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk234",
+          "x": 22,
+          "y": 22,
+          "name": "双栏 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk235",
+          "x": 1242,
+          "y": 22,
+          "name": "双栏 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk236",
+          "x": 1257,
+          "y": 22,
+          "name": "双栏 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk237",
+          "x": 22,
+          "y": 697,
+          "name": "双栏 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk238",
+          "x": 22,
+          "y": 682,
+          "name": "双栏 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk239",
+          "x": 1242,
+          "y": 697,
+          "name": "双栏 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk240",
+          "x": 1257,
+          "y": 682,
+          "name": "双栏 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk241",
+          "x": 80,
+          "y": 67,
+          "name": "双栏 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk242",
+          "x": 77,
+          "y": 61,
+          "name": "双栏 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk243",
+          "x": 97,
+          "y": 64,
+          "name": "双栏 眉标",
+          "content": "PART 04 · 正文 · TWO-COLUMN",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk244",
+          "x": 78,
+          "y": 96,
+          "name": "双栏 标题",
+          "content": "1. 正文 (双栏布局)",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk245",
+          "x": 80,
+          "y": 148,
+          "name": "双栏 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk246",
+          "x": 80,
+          "y": 182,
+          "name": "双栏 正文",
+          "content": "曲曲折折的荷塘上面，弥望的是田田的叶子。叶子出水很高，像亭亭的舞女的裙。\n\n层层的叶子中间，零星地点缀着些白花，有袅娜地开着的，有羞涩地打着朵儿的；正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。\n\n微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。\n\n叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉的流水，遮住了，不能见一些颜色；而叶子却更见风致了。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 560,
+          "lineHeight": 1.8
+        },
+        {
+          "type": "text",
+          "id": "sk247",
+          "x": 80,
+          "y": 580,
+          "name": "双栏 出处",
+          "content": "—— 朱自清《荷塘月色》 返回 ↗",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk248",
+          "x": 700,
+          "y": 182,
+          "name": "双栏 配图",
+          "width": 500,
+          "height": 400,
+          "fill": {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1691460606272-0329689c20fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 12
+        },
+        {
+          "type": "text",
+          "id": "sk249",
+          "x": 700,
+          "y": 594,
+          "name": "双栏 图注",
+          "content": "图：荷塘 · Unsplash",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk250",
+          "x": 80,
+          "y": 678,
+          "name": "双栏 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk251",
+          "x": 80,
+          "y": 690,
+          "name": "双栏 页脚左",
+          "content": "PART 04 · 正文 · TWO-COLUMN",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk252",
+          "x": 1000,
+          "y": 690,
+          "name": "双栏 页脚右",
+          "content": "04 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk299",
+      "x": 5440,
+      "y": 0,
+      "name": "05 正文·品字 Pin",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk254",
+          "x": 624,
+          "y": -184,
+          "name": "品字 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk255",
+          "x": -94,
+          "y": 154,
+          "name": "品字 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk256",
+          "x": 80,
+          "y": 0,
+          "name": "品字 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk257",
+          "x": 160,
+          "y": 0,
+          "name": "品字 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk258",
+          "x": 240,
+          "y": 0,
+          "name": "品字 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk259",
+          "x": 320,
+          "y": 0,
+          "name": "品字 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk260",
+          "x": 400,
+          "y": 0,
+          "name": "品字 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk261",
+          "x": 480,
+          "y": 0,
+          "name": "品字 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk262",
+          "x": 560,
+          "y": 0,
+          "name": "品字 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk263",
+          "x": 640,
+          "y": 0,
+          "name": "品字 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk264",
+          "x": 720,
+          "y": 0,
+          "name": "品字 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk265",
+          "x": 800,
+          "y": 0,
+          "name": "品字 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk266",
+          "x": 880,
+          "y": 0,
+          "name": "品字 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk267",
+          "x": 960,
+          "y": 0,
+          "name": "品字 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk268",
+          "x": 1040,
+          "y": 0,
+          "name": "品字 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk269",
+          "x": 1120,
+          "y": 0,
+          "name": "品字 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk270",
+          "x": 1200,
+          "y": 0,
+          "name": "品字 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk271",
+          "x": 0,
+          "y": 80,
+          "name": "品字 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk272",
+          "x": 0,
+          "y": 160,
+          "name": "品字 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk273",
+          "x": 0,
+          "y": 240,
+          "name": "品字 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk274",
+          "x": 0,
+          "y": 320,
+          "name": "品字 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk275",
+          "x": 0,
+          "y": 400,
+          "name": "品字 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk276",
+          "x": 0,
+          "y": 480,
+          "name": "品字 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk277",
+          "x": 0,
+          "y": 560,
+          "name": "品字 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk278",
+          "x": 0,
+          "y": 640,
+          "name": "品字 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk279",
+          "x": 0,
+          "y": 719,
+          "name": "品字 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk280",
+          "x": 22,
+          "y": 22,
+          "name": "品字 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk281",
+          "x": 22,
+          "y": 22,
+          "name": "品字 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk282",
+          "x": 1242,
+          "y": 22,
+          "name": "品字 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk283",
+          "x": 1257,
+          "y": 22,
+          "name": "品字 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk284",
+          "x": 22,
+          "y": 697,
+          "name": "品字 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk285",
+          "x": 22,
+          "y": 682,
+          "name": "品字 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk286",
+          "x": 1242,
+          "y": 697,
+          "name": "品字 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk287",
+          "x": 1257,
+          "y": 682,
+          "name": "品字 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk288",
+          "x": 80,
+          "y": 67,
+          "name": "品字 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk289",
+          "x": 77,
+          "y": 61,
+          "name": "品字 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk290",
+          "x": 97,
+          "y": 64,
+          "name": "品字 眉标",
+          "content": "PART 05 · 正文 · PIN",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk291",
+          "x": 78,
+          "y": 96,
+          "name": "品字 标题",
+          "content": "2. 正文 (品字布局)",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk292",
+          "x": 80,
+          "y": 148,
+          "name": "品字 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk293",
+          "x": 80,
+          "y": 182,
+          "name": "品字 正文",
+          "content": "四百年前，两位截然不同的科学家突破了当时已知世界的边界。1609年在威尼斯，伽利略·伽利雷透过望远镜观察星辰，并制作仪器和进行实验。在布拉格，科班出身的神学家约翰内斯·开普勒发现了行星运动定律，奠定了近代天体物理学的基础，并思考着宇宙的宏伟构造。托马斯·德·帕多瓦以至今较少受到关注却扣人心弦的通信往来为基础，讲述了这两位类型如此迥异的学者之间不对等的关系，以及他们如何在同样的时刻却以各自的方式探索星辰的奥秘。在彼此的鉴照下，他们的远见与固执、睿智与无知得以呈现。这是一部介绍新科学的崛起以及近代来临之际的巨大变革的作品。  ——《宇宙的奥秘》",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 1120,
+          "lineHeight": 1.8
+        },
+        {
+          "type": "rectangle",
+          "id": "sk294",
+          "x": 80,
+          "y": 370,
+          "name": "品字 图1",
+          "width": 552,
+          "height": 260,
+          "fill": {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1621796540685-5037cb5e866f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzODh8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 12
+        },
+        {
+          "type": "rectangle",
+          "id": "sk295",
+          "x": 648,
+          "y": 370,
+          "name": "品字 图2",
+          "width": 552,
+          "height": 260,
+          "fill": {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1544133544-47e2aef9b9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzODl8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 12
+        },
+        {
+          "type": "rectangle",
+          "id": "sk296",
+          "x": 80,
+          "y": 678,
+          "name": "品字 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk297",
+          "x": 80,
+          "y": 690,
+          "name": "品字 页脚左",
+          "content": "PART 05 · 正文 · PIN",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk298",
+          "x": 1000,
+          "y": 690,
+          "name": "品字 页脚右",
+          "content": "05 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk349",
+      "x": 6800,
+      "y": 0,
+      "name": "06 引用盒 Quote",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk300",
+          "x": 624,
+          "y": -184,
+          "name": "引用 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk301",
+          "x": -94,
+          "y": 154,
+          "name": "引用 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk302",
+          "x": 80,
+          "y": 0,
+          "name": "引用 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk303",
+          "x": 160,
+          "y": 0,
+          "name": "引用 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk304",
+          "x": 240,
+          "y": 0,
+          "name": "引用 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk305",
+          "x": 320,
+          "y": 0,
+          "name": "引用 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk306",
+          "x": 400,
+          "y": 0,
+          "name": "引用 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk307",
+          "x": 480,
+          "y": 0,
+          "name": "引用 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk308",
+          "x": 560,
+          "y": 0,
+          "name": "引用 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk309",
+          "x": 640,
+          "y": 0,
+          "name": "引用 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk310",
+          "x": 720,
+          "y": 0,
+          "name": "引用 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk311",
+          "x": 800,
+          "y": 0,
+          "name": "引用 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk312",
+          "x": 880,
+          "y": 0,
+          "name": "引用 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk313",
+          "x": 960,
+          "y": 0,
+          "name": "引用 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk314",
+          "x": 1040,
+          "y": 0,
+          "name": "引用 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk315",
+          "x": 1120,
+          "y": 0,
+          "name": "引用 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk316",
+          "x": 1200,
+          "y": 0,
+          "name": "引用 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk317",
+          "x": 0,
+          "y": 80,
+          "name": "引用 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk318",
+          "x": 0,
+          "y": 160,
+          "name": "引用 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk319",
+          "x": 0,
+          "y": 240,
+          "name": "引用 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk320",
+          "x": 0,
+          "y": 320,
+          "name": "引用 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk321",
+          "x": 0,
+          "y": 400,
+          "name": "引用 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk322",
+          "x": 0,
+          "y": 480,
+          "name": "引用 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk323",
+          "x": 0,
+          "y": 560,
+          "name": "引用 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk324",
+          "x": 0,
+          "y": 640,
+          "name": "引用 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk325",
+          "x": 0,
+          "y": 719,
+          "name": "引用 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk326",
+          "x": 22,
+          "y": 22,
+          "name": "引用 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk327",
+          "x": 22,
+          "y": 22,
+          "name": "引用 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk328",
+          "x": 1242,
+          "y": 22,
+          "name": "引用 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk329",
+          "x": 1257,
+          "y": 22,
+          "name": "引用 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk330",
+          "x": 22,
+          "y": 697,
+          "name": "引用 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk331",
+          "x": 22,
+          "y": 682,
+          "name": "引用 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk332",
+          "x": 1242,
+          "y": 697,
+          "name": "引用 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk333",
+          "x": 1257,
+          "y": 682,
+          "name": "引用 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk334",
+          "x": 80,
+          "y": 67,
+          "name": "引用 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk335",
+          "x": 77,
+          "y": 61,
+          "name": "引用 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk336",
+          "x": 97,
+          "y": 64,
+          "name": "引用 眉标",
+          "content": "PART 06 · QUOTE",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk337",
+          "x": 78,
+          "y": 96,
+          "name": "引用 标题",
+          "content": "3. 引用盒子",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk338",
+          "x": 80,
+          "y": 148,
+          "name": "引用 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk339",
+          "x": 80,
+          "y": 182,
+          "name": "引用 面板",
+          "width": 1120,
+          "height": 300,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "rectangle",
+          "id": "sk340",
+          "x": 80,
+          "y": 182,
+          "name": "引用 竖线",
+          "width": 3,
+          "height": 300,
+          "fill": "$accent",
+          "cornerRadius": 2
+        },
+        {
+          "type": "icon",
+          "id": "sk341",
+          "x": 120,
+          "y": 218,
+          "name": "引用 图标",
+          "width": 24,
+          "height": 24,
+          "library": "lucide",
+          "icon": "quote",
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk342",
+          "x": 160,
+          "y": 218,
+          "name": "引用 标题",
+          "content": "合成控制法 (Synthetic Control Method)",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "sk343",
+          "x": 120,
+          "y": 268,
+          "name": "引用 文1",
+          "content": "SCM 最早由 Abadie and Gardeazabal (2003) 提出，用来研究西班牙巴斯克地区恐怖活动的经济成本，属于案例研究范畴 (Case Study)。Athey & Imbens (2017) 认为它是过去 15 年计量方法领域最重要的创新。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 1040,
+          "lineHeight": 1.7
+        },
+        {
+          "type": "rectangle",
+          "id": "sk344",
+          "x": 120,
+          "y": 356,
+          "name": "引用 内线",
+          "width": 1040,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk345",
+          "x": 120,
+          "y": 380,
+          "name": "引用 文2",
+          "content": "合成控制法的基本思想是：虽然无法找到巴斯克地区的最佳控制地区，但可对西班牙的若干大城市进行适当的线性组合（赋予不同的权重），以构造一个更为贴切的「合成控制地区」(Synthetic Control Region)，然后将真实的巴斯克地区与「合成的巴斯克地区」进行对比，即可得到恐袭的影响。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 1040,
+          "lineHeight": 1.7
+        },
+        {
+          "type": "rectangle",
+          "id": "sk346",
+          "x": 80,
+          "y": 678,
+          "name": "引用 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk347",
+          "x": 80,
+          "y": 690,
+          "name": "引用 页脚左",
+          "content": "PART 06 · QUOTE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk348",
+          "x": 1000,
+          "y": 690,
+          "name": "引用 页脚右",
+          "content": "06 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk407",
+      "x": 8160,
+      "y": 0,
+      "name": "07 代码 Code",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk350",
+          "x": 624,
+          "y": -184,
+          "name": "代码 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk351",
+          "x": -94,
+          "y": 154,
+          "name": "代码 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk352",
+          "x": 80,
+          "y": 0,
+          "name": "代码 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk353",
+          "x": 160,
+          "y": 0,
+          "name": "代码 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk354",
+          "x": 240,
+          "y": 0,
+          "name": "代码 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk355",
+          "x": 320,
+          "y": 0,
+          "name": "代码 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk356",
+          "x": 400,
+          "y": 0,
+          "name": "代码 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk357",
+          "x": 480,
+          "y": 0,
+          "name": "代码 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk358",
+          "x": 560,
+          "y": 0,
+          "name": "代码 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk359",
+          "x": 640,
+          "y": 0,
+          "name": "代码 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk360",
+          "x": 720,
+          "y": 0,
+          "name": "代码 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk361",
+          "x": 800,
+          "y": 0,
+          "name": "代码 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk362",
+          "x": 880,
+          "y": 0,
+          "name": "代码 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk363",
+          "x": 960,
+          "y": 0,
+          "name": "代码 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk364",
+          "x": 1040,
+          "y": 0,
+          "name": "代码 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk365",
+          "x": 1120,
+          "y": 0,
+          "name": "代码 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk366",
+          "x": 1200,
+          "y": 0,
+          "name": "代码 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk367",
+          "x": 0,
+          "y": 80,
+          "name": "代码 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk368",
+          "x": 0,
+          "y": 160,
+          "name": "代码 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk369",
+          "x": 0,
+          "y": 240,
+          "name": "代码 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk370",
+          "x": 0,
+          "y": 320,
+          "name": "代码 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk371",
+          "x": 0,
+          "y": 400,
+          "name": "代码 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk372",
+          "x": 0,
+          "y": 480,
+          "name": "代码 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk373",
+          "x": 0,
+          "y": 560,
+          "name": "代码 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk374",
+          "x": 0,
+          "y": 640,
+          "name": "代码 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk375",
+          "x": 0,
+          "y": 719,
+          "name": "代码 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk376",
+          "x": 22,
+          "y": 22,
+          "name": "代码 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk377",
+          "x": 22,
+          "y": 22,
+          "name": "代码 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk378",
+          "x": 1242,
+          "y": 22,
+          "name": "代码 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk379",
+          "x": 1257,
+          "y": 22,
+          "name": "代码 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk380",
+          "x": 22,
+          "y": 697,
+          "name": "代码 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk381",
+          "x": 22,
+          "y": 682,
+          "name": "代码 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk382",
+          "x": 1242,
+          "y": 697,
+          "name": "代码 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk383",
+          "x": 1257,
+          "y": 682,
+          "name": "代码 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk384",
+          "x": 80,
+          "y": 67,
+          "name": "代码 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk385",
+          "x": 77,
+          "y": 61,
+          "name": "代码 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk386",
+          "x": 97,
+          "y": 64,
+          "name": "代码 眉标",
+          "content": "PART 07 · CODE",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk387",
+          "x": 78,
+          "y": 96,
+          "name": "代码 标题",
+          "content": "4. 代码块高亮",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk388",
+          "x": 80,
+          "y": 148,
+          "name": "代码 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk389",
+          "x": 80,
+          "y": 168,
+          "name": "代码 说明",
+          "content": "支持多种编程语言的语法高亮显示，让代码更具可读性。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk390",
+          "x": 80,
+          "y": 210,
+          "name": "代码 面板",
+          "width": 1120,
+          "height": 400,
+          "fill": "#0D1526",
+          "cornerRadius": 10,
+          "stroke": "$line",
+          "strokeWidth": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "sk391",
+          "x": 104,
+          "y": 234,
+          "name": "代码 点红",
+          "width": 10,
+          "height": 10,
+          "fill": "#FF5F57"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk392",
+          "x": 122,
+          "y": 234,
+          "name": "代码 点黄",
+          "width": 10,
+          "height": 10,
+          "fill": "#FEBC2E"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk393",
+          "x": 140,
+          "y": 234,
+          "name": "代码 点绿",
+          "width": 10,
+          "height": 10,
+          "fill": "#28C840"
+        },
+        {
+          "type": "text",
+          "id": "sk394",
+          "x": 164,
+          "y": 232,
+          "name": "代码 文件名",
+          "content": "main.go",
+          "fill": "#6C7086",
+          "fontFamily": "$font-mono",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk395",
+          "x": 120,
+          "y": 272,
+          "name": "代码 行01",
+          "content": "python",
+          "fill": "#7DD3FC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk396",
+          "x": 120,
+          "y": 306,
+          "name": "代码 行02",
+          "content": "def hello_world():",
+          "fill": "#CBA6F7",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk397",
+          "x": 120,
+          "y": 340,
+          "name": "代码 行03",
+          "content": "    \"\"\"打印问候语\"\"\"",
+          "fill": "#6C7086",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk398",
+          "x": 120,
+          "y": 374,
+          "name": "代码 行04",
+          "content": "    name = \"Marp\"",
+          "fill": "#F5E0DC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk399",
+          "x": 120,
+          "y": 408,
+          "name": "代码 行05",
+          "content": "    print(f\"Hello, {name}!\")",
+          "fill": "#F5E0DC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk400",
+          "x": 120,
+          "y": 442,
+          "name": "代码 行06",
+          "content": "    return True",
+          "fill": "#F5E0DC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk401",
+          "x": 120,
+          "y": 476,
+          "name": "代码 行07",
+          "content": " ",
+          "fill": "#F5E0DC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk402",
+          "x": 120,
+          "y": 510,
+          "name": "代码 行08",
+          "content": "if __name__ == \"__main__\":",
+          "fill": "#CBA6F7",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk403",
+          "x": 120,
+          "y": 544,
+          "name": "代码 行09",
+          "content": "    hello_world()",
+          "fill": "#89DCEB",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk404",
+          "x": 80,
+          "y": 678,
+          "name": "代码 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk405",
+          "x": 80,
+          "y": 690,
+          "name": "代码 页脚左",
+          "content": "PART 07 · CODE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk406",
+          "x": 1000,
+          "y": 690,
+          "name": "代码 页脚右",
+          "content": "07 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk470",
+      "x": 9520,
+      "y": 0,
+      "name": "08 流程 Flow",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk408",
+          "x": 624,
+          "y": -184,
+          "name": "流程 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk409",
+          "x": -94,
+          "y": 154,
+          "name": "流程 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk410",
+          "x": 80,
+          "y": 0,
+          "name": "流程 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk411",
+          "x": 160,
+          "y": 0,
+          "name": "流程 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk412",
+          "x": 240,
+          "y": 0,
+          "name": "流程 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk413",
+          "x": 320,
+          "y": 0,
+          "name": "流程 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk414",
+          "x": 400,
+          "y": 0,
+          "name": "流程 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk415",
+          "x": 480,
+          "y": 0,
+          "name": "流程 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk416",
+          "x": 560,
+          "y": 0,
+          "name": "流程 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk417",
+          "x": 640,
+          "y": 0,
+          "name": "流程 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk418",
+          "x": 720,
+          "y": 0,
+          "name": "流程 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk419",
+          "x": 800,
+          "y": 0,
+          "name": "流程 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk420",
+          "x": 880,
+          "y": 0,
+          "name": "流程 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk421",
+          "x": 960,
+          "y": 0,
+          "name": "流程 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk422",
+          "x": 1040,
+          "y": 0,
+          "name": "流程 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk423",
+          "x": 1120,
+          "y": 0,
+          "name": "流程 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk424",
+          "x": 1200,
+          "y": 0,
+          "name": "流程 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk425",
+          "x": 0,
+          "y": 80,
+          "name": "流程 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk426",
+          "x": 0,
+          "y": 160,
+          "name": "流程 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk427",
+          "x": 0,
+          "y": 240,
+          "name": "流程 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk428",
+          "x": 0,
+          "y": 320,
+          "name": "流程 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk429",
+          "x": 0,
+          "y": 400,
+          "name": "流程 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk430",
+          "x": 0,
+          "y": 480,
+          "name": "流程 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk431",
+          "x": 0,
+          "y": 560,
+          "name": "流程 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk432",
+          "x": 0,
+          "y": 640,
+          "name": "流程 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk433",
+          "x": 0,
+          "y": 719,
+          "name": "流程 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk434",
+          "x": 22,
+          "y": 22,
+          "name": "流程 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk435",
+          "x": 22,
+          "y": 22,
+          "name": "流程 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk436",
+          "x": 1242,
+          "y": 22,
+          "name": "流程 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk437",
+          "x": 1257,
+          "y": 22,
+          "name": "流程 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk438",
+          "x": 22,
+          "y": 697,
+          "name": "流程 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk439",
+          "x": 22,
+          "y": 682,
+          "name": "流程 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk440",
+          "x": 1242,
+          "y": 697,
+          "name": "流程 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk441",
+          "x": 1257,
+          "y": 682,
+          "name": "流程 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk442",
+          "x": 80,
+          "y": 67,
+          "name": "流程 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk443",
+          "x": 77,
+          "y": 61,
+          "name": "流程 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk444",
+          "x": 97,
+          "y": 64,
+          "name": "流程 眉标",
+          "content": "PART 08 · FLOW",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk445",
+          "x": 78,
+          "y": 96,
+          "name": "流程 标题",
+          "content": "5. 流程图示例",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk446",
+          "x": 80,
+          "y": 148,
+          "name": "流程 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk447",
+          "x": 80,
+          "y": 168,
+          "name": "流程 说明",
+          "content": "使用简洁的流程图展示工作流或算法步骤，直观清晰。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk448",
+          "x": 80,
+          "y": 260,
+          "name": "流程 框数据采集",
+          "width": 240,
+          "height": 180,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "icon",
+          "id": "sk449",
+          "x": 176,
+          "y": 292,
+          "name": "流程 图标数据采集",
+          "width": 36,
+          "height": 36,
+          "library": "lucide",
+          "icon": "database",
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk450",
+          "x": 80,
+          "y": 348,
+          "name": "流程 题数据采集",
+          "content": "数据采集",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk451",
+          "x": 80,
+          "y": 380,
+          "name": "流程 述数据采集",
+          "content": "收集原始数据",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk452",
+          "x": 328,
+          "y": 332,
+          "name": "流程 箭头0",
+          "content": "→",
+          "fill": "$accent",
+          "fontFamily": "$font-display",
+          "fontSize": 22,
+          "fontWeight": "700"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk453",
+          "x": 376,
+          "y": 260,
+          "name": "流程 框数据清洗",
+          "width": 240,
+          "height": 180,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "icon",
+          "id": "sk454",
+          "x": 472,
+          "y": 292,
+          "name": "流程 图标数据清洗",
+          "width": 36,
+          "height": 36,
+          "library": "lucide",
+          "icon": "droplets",
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk455",
+          "x": 376,
+          "y": 348,
+          "name": "流程 题数据清洗",
+          "content": "数据清洗",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk456",
+          "x": 376,
+          "y": 380,
+          "name": "流程 述数据清洗",
+          "content": "处理缺失值与异常",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk457",
+          "x": 624,
+          "y": 332,
+          "name": "流程 箭头1",
+          "content": "→",
+          "fill": "$accent",
+          "fontFamily": "$font-display",
+          "fontSize": 22,
+          "fontWeight": "700"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk458",
+          "x": 672,
+          "y": 260,
+          "name": "流程 框模型训练",
+          "width": 240,
+          "height": 180,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "icon",
+          "id": "sk459",
+          "x": 768,
+          "y": 292,
+          "name": "流程 图标模型训练",
+          "width": 36,
+          "height": 36,
+          "library": "lucide",
+          "icon": "cpu",
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk460",
+          "x": 672,
+          "y": 348,
+          "name": "流程 题模型训练",
+          "content": "模型训练",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk461",
+          "x": 672,
+          "y": 380,
+          "name": "流程 述模型训练",
+          "content": "构建预测模型",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk462",
+          "x": 920,
+          "y": 332,
+          "name": "流程 箭头2",
+          "content": "→",
+          "fill": "$accent",
+          "fontFamily": "$font-display",
+          "fontSize": 22,
+          "fontWeight": "700"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk463",
+          "x": 968,
+          "y": 260,
+          "name": "流程 框结果评估",
+          "width": 240,
+          "height": 180,
+          "fill": "$accent",
+          "cornerRadius": 12
+        },
+        {
+          "type": "icon",
+          "id": "sk464",
+          "x": 1064,
+          "y": 292,
+          "name": "流程 图标结果评估",
+          "width": 36,
+          "height": 36,
+          "library": "lucide",
+          "icon": "check",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "text",
+          "id": "sk465",
+          "x": 968,
+          "y": 348,
+          "name": "流程 题结果评估",
+          "content": "结果评估",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk466",
+          "x": 968,
+          "y": 380,
+          "name": "流程 述结果评估",
+          "content": "验证模型效果",
+          "fill": "#FFFFFFCC",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk467",
+          "x": 80,
+          "y": 678,
+          "name": "流程 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk468",
+          "x": 80,
+          "y": 690,
+          "name": "流程 页脚左",
+          "content": "PART 08 · FLOW",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk469",
+          "x": 1000,
+          "y": 690,
+          "name": "流程 页脚右",
+          "content": "08 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk541",
+      "x": 10880,
+      "y": 0,
+      "name": "09 表格 Table",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk471",
+          "x": 624,
+          "y": -184,
+          "name": "表格 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk472",
+          "x": -94,
+          "y": 154,
+          "name": "表格 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk473",
+          "x": 80,
+          "y": 0,
+          "name": "表格 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk474",
+          "x": 160,
+          "y": 0,
+          "name": "表格 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk475",
+          "x": 240,
+          "y": 0,
+          "name": "表格 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk476",
+          "x": 320,
+          "y": 0,
+          "name": "表格 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk477",
+          "x": 400,
+          "y": 0,
+          "name": "表格 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk478",
+          "x": 480,
+          "y": 0,
+          "name": "表格 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk479",
+          "x": 560,
+          "y": 0,
+          "name": "表格 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk480",
+          "x": 640,
+          "y": 0,
+          "name": "表格 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk481",
+          "x": 720,
+          "y": 0,
+          "name": "表格 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk482",
+          "x": 800,
+          "y": 0,
+          "name": "表格 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk483",
+          "x": 880,
+          "y": 0,
+          "name": "表格 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk484",
+          "x": 960,
+          "y": 0,
+          "name": "表格 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk485",
+          "x": 1040,
+          "y": 0,
+          "name": "表格 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk486",
+          "x": 1120,
+          "y": 0,
+          "name": "表格 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk487",
+          "x": 1200,
+          "y": 0,
+          "name": "表格 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk488",
+          "x": 0,
+          "y": 80,
+          "name": "表格 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk489",
+          "x": 0,
+          "y": 160,
+          "name": "表格 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk490",
+          "x": 0,
+          "y": 240,
+          "name": "表格 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk491",
+          "x": 0,
+          "y": 320,
+          "name": "表格 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk492",
+          "x": 0,
+          "y": 400,
+          "name": "表格 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk493",
+          "x": 0,
+          "y": 480,
+          "name": "表格 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk494",
+          "x": 0,
+          "y": 560,
+          "name": "表格 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk495",
+          "x": 0,
+          "y": 640,
+          "name": "表格 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk496",
+          "x": 0,
+          "y": 719,
+          "name": "表格 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk497",
+          "x": 22,
+          "y": 22,
+          "name": "表格 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk498",
+          "x": 22,
+          "y": 22,
+          "name": "表格 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk499",
+          "x": 1242,
+          "y": 22,
+          "name": "表格 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk500",
+          "x": 1257,
+          "y": 22,
+          "name": "表格 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk501",
+          "x": 22,
+          "y": 697,
+          "name": "表格 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk502",
+          "x": 22,
+          "y": 682,
+          "name": "表格 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk503",
+          "x": 1242,
+          "y": 697,
+          "name": "表格 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk504",
+          "x": 1257,
+          "y": 682,
+          "name": "表格 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk505",
+          "x": 80,
+          "y": 67,
+          "name": "表格 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "sk506",
+          "x": 77,
+          "y": 61,
+          "name": "表格 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "$halo"
+        },
+        {
+          "type": "text",
+          "id": "sk507",
+          "x": 97,
+          "y": 64,
+          "name": "表格 眉标",
+          "content": "PART 09 · TABLE",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "sk508",
+          "x": 78,
+          "y": 96,
+          "name": "表格 标题",
+          "content": "6. 图表示例",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "sk509",
+          "x": 80,
+          "y": 148,
+          "name": "表格 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk510",
+          "x": 80,
+          "y": 168,
+          "name": "表格 说明",
+          "content": "下表对比了几种常见的计量经济学方法及其应用场景。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk511",
+          "x": 96,
+          "y": 226,
+          "name": "表格 表头方法名称",
+          "content": "方法名称",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "sk512",
+          "x": 416,
+          "y": 226,
+          "name": "表格 表头提出者",
+          "content": "提出者",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "sk513",
+          "x": 716,
+          "y": 226,
+          "name": "表格 表头应用领域",
+          "content": "应用领域",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "sk514",
+          "x": 976,
+          "y": 226,
+          "name": "表格 表头核心特点",
+          "content": "核心特点",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk515",
+          "x": 80,
+          "y": 254,
+          "name": "表格 表头线",
+          "width": 1120,
+          "height": 2,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "sk516",
+          "x": 96,
+          "y": 276,
+          "name": "表格 格00",
+          "content": "合成控制法",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "sk517",
+          "x": 416,
+          "y": 276,
+          "name": "表格 格01",
+          "content": "Abadie (2003)",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk518",
+          "x": 716,
+          "y": 276,
+          "name": "表格 格02",
+          "content": "政策评估 / 案例研究",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk519",
+          "x": 976,
+          "y": 276,
+          "name": "表格 格03",
+          "content": "构建合成控制组进行对比",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk520",
+          "x": 80,
+          "y": 318,
+          "name": "表格 行线0",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk521",
+          "x": 80,
+          "y": 318,
+          "name": "表格 斑马1",
+          "width": 1120,
+          "height": 64,
+          "fill": "$tint"
+        },
+        {
+          "type": "text",
+          "id": "sk522",
+          "x": 96,
+          "y": 340,
+          "name": "表格 格10",
+          "content": "双重差分",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "sk523",
+          "x": 416,
+          "y": 340,
+          "name": "表格 格11",
+          "content": "Card & Krueger (1994)",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk524",
+          "x": 716,
+          "y": 340,
+          "name": "表格 格12",
+          "content": "政策效应评估",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk525",
+          "x": 976,
+          "y": 340,
+          "name": "表格 格13",
+          "content": "利用处理前后差异估计因果",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk526",
+          "x": 80,
+          "y": 382,
+          "name": "表格 行线1",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk527",
+          "x": 96,
+          "y": 404,
+          "name": "表格 格20",
+          "content": "工具变量",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "sk528",
+          "x": 416,
+          "y": 404,
+          "name": "表格 格21",
+          "content": "Wright (1928)",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk529",
+          "x": 716,
+          "y": 404,
+          "name": "表格 格22",
+          "content": "内生性 / 因果推断",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk530",
+          "x": 976,
+          "y": 404,
+          "name": "表格 格23",
+          "content": "通过工具分离内生变异",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk531",
+          "x": 80,
+          "y": 446,
+          "name": "表格 行线2",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk532",
+          "x": 80,
+          "y": 446,
+          "name": "表格 斑马3",
+          "width": 1120,
+          "height": 64,
+          "fill": "$tint"
+        },
+        {
+          "type": "text",
+          "id": "sk533",
+          "x": 96,
+          "y": 468,
+          "name": "表格 格30",
+          "content": "断点回归",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "sk534",
+          "x": 416,
+          "y": 468,
+          "name": "表格 格31",
+          "content": "Thistlethwaite (1960)",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk535",
+          "x": 716,
+          "y": 468,
+          "name": "表格 格32",
+          "content": "政策门槛 / 资格限制",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "sk536",
+          "x": 976,
+          "y": 468,
+          "name": "表格 格33",
+          "content": "利用断点处局部随机性",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk537",
+          "x": 80,
+          "y": 510,
+          "name": "表格 行线3",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk538",
+          "x": 80,
+          "y": 678,
+          "name": "表格 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk539",
+          "x": 80,
+          "y": 690,
+          "name": "表格 页脚左",
+          "content": "PART 09 · TABLE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk540",
+          "x": 1000,
+          "y": 690,
+          "name": "表格 页脚右",
+          "content": "09 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "sk583",
+      "x": 12240,
+      "y": 0,
+      "name": "10 致谢 Thanks",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": {
+        "type": "gradient",
+        "gradientType": "radial",
+        "center": {
+          "x": 0.5,
+          "y": -0.2
+        },
+        "size": {
+          "width": 1,
+          "height": 0.8
+        },
+        "colors": [
+          {
+            "color": "#0A1F3D",
+            "position": 0
+          },
+          {
+            "color": "#050B1F",
+            "position": 0.6
+          }
+        ]
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "sk542",
+          "x": 624,
+          "y": -184,
+          "name": "致谢 辉光靛",
+          "width": 800,
+          "height": 800,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#6366F159",
+                "position": 0
+              },
+              {
+                "color": "#6366F100",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "sk543",
+          "x": -94,
+          "y": 154,
+          "name": "致谢 辉光青",
+          "width": 700,
+          "height": 700,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE40",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk544",
+          "x": 80,
+          "y": 0,
+          "name": "致谢 网格v80",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk545",
+          "x": 160,
+          "y": 0,
+          "name": "致谢 网格v160",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk546",
+          "x": 240,
+          "y": 0,
+          "name": "致谢 网格v240",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk547",
+          "x": 320,
+          "y": 0,
+          "name": "致谢 网格v320",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk548",
+          "x": 400,
+          "y": 0,
+          "name": "致谢 网格v400",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk549",
+          "x": 480,
+          "y": 0,
+          "name": "致谢 网格v480",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk550",
+          "x": 560,
+          "y": 0,
+          "name": "致谢 网格v560",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk551",
+          "x": 640,
+          "y": 0,
+          "name": "致谢 网格v640",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk552",
+          "x": 720,
+          "y": 0,
+          "name": "致谢 网格v720",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk553",
+          "x": 800,
+          "y": 0,
+          "name": "致谢 网格v800",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk554",
+          "x": 880,
+          "y": 0,
+          "name": "致谢 网格v880",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk555",
+          "x": 960,
+          "y": 0,
+          "name": "致谢 网格v960",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk556",
+          "x": 1040,
+          "y": 0,
+          "name": "致谢 网格v1040",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk557",
+          "x": 1120,
+          "y": 0,
+          "name": "致谢 网格v1120",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk558",
+          "x": 1200,
+          "y": 0,
+          "name": "致谢 网格v1200",
+          "width": 1,
+          "height": 720,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk559",
+          "x": 0,
+          "y": 80,
+          "name": "致谢 网格h80",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk560",
+          "x": 0,
+          "y": 160,
+          "name": "致谢 网格h160",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk561",
+          "x": 0,
+          "y": 240,
+          "name": "致谢 网格h240",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk562",
+          "x": 0,
+          "y": 320,
+          "name": "致谢 网格h320",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk563",
+          "x": 0,
+          "y": 400,
+          "name": "致谢 网格h400",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk564",
+          "x": 0,
+          "y": 480,
+          "name": "致谢 网格h480",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk565",
+          "x": 0,
+          "y": 560,
+          "name": "致谢 网格h560",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk566",
+          "x": 0,
+          "y": 640,
+          "name": "致谢 网格h640",
+          "width": 1280,
+          "height": 1,
+          "fill": "#FFFFFF05"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk567",
+          "x": 0,
+          "y": 719,
+          "name": "致谢 底辉线",
+          "width": 1280,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "sk568",
+          "x": 22,
+          "y": 22,
+          "name": "致谢 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk569",
+          "x": 22,
+          "y": 22,
+          "name": "致谢 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk570",
+          "x": 1242,
+          "y": 22,
+          "name": "致谢 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk571",
+          "x": 1257,
+          "y": 22,
+          "name": "致谢 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk572",
+          "x": 22,
+          "y": 697,
+          "name": "致谢 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk573",
+          "x": 22,
+          "y": 682,
+          "name": "致谢 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk574",
+          "x": 1242,
+          "y": 697,
+          "name": "致谢 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk575",
+          "x": 1257,
+          "y": 682,
+          "name": "致谢 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#22D3EE66"
+        },
+        {
+          "type": "text",
+          "id": "sk576",
+          "x": 0,
+          "y": 260,
+          "name": "致谢 主文案",
+          "content": "感谢聆听",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 48,
+          "fontWeight": "800",
+          "letterSpacing": -1,
+          "textGrowth": "fixed-width",
+          "width": 1280,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "sk577",
+          "x": 0,
+          "y": 330,
+          "name": "致谢 斜体",
+          "content": "Thanks for listening.",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 30,
+          "fontWeight": "normal",
+          "fontStyle": "italic",
+          "textGrowth": "fixed-width",
+          "width": 1280,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk578",
+          "x": 480,
+          "y": 400,
+          "name": "致谢 光线",
+          "width": 320,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#22D3EE00",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE80",
+                "position": 0.5
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "id": "sk579",
+          "x": 0,
+          "y": 428,
+          "name": "致谢 副文案",
+          "content": "如有疑问，欢迎交流",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 1280,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "sk580",
+          "x": 80,
+          "y": 678,
+          "name": "致谢 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "sk581",
+          "x": 80,
+          "y": 690,
+          "name": "致谢 页脚左",
+          "content": "PART 10 · THANKS",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "sk582",
+          "x": 1000,
+          "y": 690,
+          "name": "致谢 页脚右",
+          "content": "10 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4462 @@
+{
+  "version": "2.17",
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#2563EB"
+    },
+    "accent-deep": {
+      "type": "color",
+      "value": "#1D4ED8"
+    },
+    "ink": {
+      "type": "color",
+      "value": "#0A1D3A"
+    },
+    "gray": {
+      "type": "color",
+      "value": "#64748B"
+    },
+    "faint": {
+      "type": "color",
+      "value": "#94A3B8"
+    },
+    "line": {
+      "type": "color",
+      "value": "#0A1D3A0F"
+    },
+    "tint": {
+      "type": "color",
+      "value": "#F6F8FB"
+    },
+    "paper": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Inter Tight"
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-serif": {
+      "type": "string",
+      "value": "Instrument Serif"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "JetBrains Mono"
+    }
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "rs50",
+      "x": 0,
+      "y": 0,
+      "name": "01 封面 Cover",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs01",
+          "x": 0,
+          "y": 0,
+          "name": "封面 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs02",
+          "x": 900,
+          "y": -140,
+          "name": "封面 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs03",
+          "x": 28,
+          "y": 28,
+          "name": "封面 内框",
+          "width": 1224,
+          "height": 664,
+          "fill": "#00000000",
+          "cornerRadius": 6,
+          "stroke": "$line",
+          "strokeWidth": 1
+        },
+        {
+          "type": "rectangle",
+          "id": "rs04",
+          "x": 22,
+          "y": 22,
+          "name": "封面 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs05",
+          "x": 22,
+          "y": 22,
+          "name": "封面 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs06",
+          "x": 1242,
+          "y": 22,
+          "name": "封面 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs07",
+          "x": 1257,
+          "y": 22,
+          "name": "封面 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs08",
+          "x": 22,
+          "y": 697,
+          "name": "封面 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs09",
+          "x": 22,
+          "y": 682,
+          "name": "封面 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs10",
+          "x": 1242,
+          "y": 697,
+          "name": "封面 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs11",
+          "x": 1257,
+          "y": 682,
+          "name": "封面 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs12",
+          "x": 80,
+          "y": 430,
+          "name": "封面 中光线",
+          "width": 1120,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#2563EB00",
+                "position": 0
+              },
+              {
+                "color": "#2563EB73",
+                "position": 0.5
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs13",
+          "x": 80,
+          "y": 56,
+          "name": "封面 Logo块",
+          "width": 22,
+          "height": 22,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 135,
+            "colors": [
+              {
+                "color": "#2563EB",
+                "position": 0
+              },
+              {
+                "color": "#1D4ED8",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 6
+        },
+        {
+          "type": "rectangle",
+          "id": "rs14",
+          "x": 86,
+          "y": 62,
+          "name": "封面 Logo芯",
+          "width": 10,
+          "height": 10,
+          "fill": "#00000000",
+          "cornerRadius": 2,
+          "stroke": "#FFFFFFF2",
+          "strokeWidth": 1.5
+        },
+        {
+          "type": "text",
+          "id": "rs15",
+          "x": 112,
+          "y": 58,
+          "name": "封面 品牌",
+          "content": "Pencil",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "letterSpacing": -0.3
+        },
+        {
+          "type": "text",
+          "id": "rs16",
+          "x": 158,
+          "y": 58,
+          "name": "封面 品牌斜体",
+          "content": "Template",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 15,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "rs17",
+          "x": 980,
+          "y": 60,
+          "name": "封面 导航",
+          "content": "模板 · 使用 · 导出",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "500",
+          "textGrowth": "fixed-width",
+          "width": 220,
+          "textAlign": "right"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs18",
+          "x": 80,
+          "y": 153,
+          "name": "封面 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs19",
+          "x": 77,
+          "y": 147,
+          "name": "封面 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs20",
+          "x": 97,
+          "y": 150,
+          "name": "封面 眉标",
+          "content": "PART 01 · PENCIL TEMPLATE",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs21",
+          "x": 78,
+          "y": 182,
+          "name": "封面 标题",
+          "content": "基于Pencil的PPT模板",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 64,
+          "fontWeight": "800",
+          "letterSpacing": -2
+        },
+        {
+          "type": "text",
+          "id": "rs22",
+          "x": 80,
+          "y": 262,
+          "name": "封面 斜体副题",
+          "content": "“基于AI的 PPT 模板”",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 38,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "rs23",
+          "x": 80,
+          "y": 340,
+          "name": "封面 汇报人",
+          "content": "汇报人：Baffalo",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs24",
+          "x": 80,
+          "y": 368,
+          "name": "封面 日期",
+          "content": "发布时间：2026年4月22日",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs25",
+          "x": 80,
+          "y": 470,
+          "name": "封面 数据顶线",
+          "width": 760,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs26",
+          "x": 80,
+          "y": 500,
+          "name": "封面 数PAGE TYPES",
+          "content": "10",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 44,
+          "fontWeight": "700",
+          "letterSpacing": -1.7
+        },
+        {
+          "type": "text",
+          "id": "rs27",
+          "x": 140,
+          "y": 514,
+          "name": "封面 单位PAGE TYPES",
+          "content": "种",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 22,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "rs28",
+          "x": 80,
+          "y": 556,
+          "name": "封面 标签PAGE TYPES",
+          "content": "PAGE TYPES",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "500",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "rs29",
+          "x": 340,
+          "y": 500,
+          "name": "封面 数FONT PAIRINGS",
+          "content": "2",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 44,
+          "fontWeight": "700",
+          "letterSpacing": -1.7
+        },
+        {
+          "type": "text",
+          "id": "rs30",
+          "x": 373,
+          "y": 514,
+          "name": "封面 单位FONT PAIRINGS",
+          "content": "组",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 22,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "rs31",
+          "x": 340,
+          "y": 556,
+          "name": "封面 标签FONT PAIRINGS",
+          "content": "FONT PAIRINGS",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "500",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "rs32",
+          "x": 600,
+          "y": 500,
+          "name": "封面 数EDITABLE TEXT",
+          "content": "100",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 44,
+          "fontWeight": "700",
+          "letterSpacing": -1.7
+        },
+        {
+          "type": "text",
+          "id": "rs33",
+          "x": 687,
+          "y": 514,
+          "name": "封面 单位EDITABLE TEXT",
+          "content": "%",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 22,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "rs34",
+          "x": 600,
+          "y": 556,
+          "name": "封面 标签EDITABLE TEXT",
+          "content": "EDITABLE TEXT",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "500",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs35",
+          "x": 300,
+          "y": 504,
+          "name": "封面 数据隔线1",
+          "width": 1,
+          "height": 56,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs36",
+          "x": 560,
+          "y": 504,
+          "name": "封面 数据隔线2",
+          "width": 1,
+          "height": 56,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs37",
+          "x": 80,
+          "y": 600,
+          "name": "封面 徽章代码高亮",
+          "width": 104,
+          "height": 26,
+          "fill": "#2563EB14",
+          "cornerRadius": 4,
+          "stroke": "#2563EB4D",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "rs38",
+          "x": 80,
+          "y": 607,
+          "name": "封面 徽章字代码高亮",
+          "content": "代码高亮",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 104,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs39",
+          "x": 198,
+          "y": 600,
+          "name": "封面 徽章流程图",
+          "width": 104,
+          "height": 26,
+          "fill": "#FFFFFF99",
+          "cornerRadius": 4,
+          "stroke": "#0A1D3A1A",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "rs40",
+          "x": 198,
+          "y": 607,
+          "name": "封面 徽章字流程图",
+          "content": "流程图",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 104,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs41",
+          "x": 316,
+          "y": 600,
+          "name": "封面 徽章表格",
+          "width": 104,
+          "height": 26,
+          "fill": "#FFFFFF99",
+          "cornerRadius": 4,
+          "stroke": "#0A1D3A1A",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "rs42",
+          "x": 316,
+          "y": 607,
+          "name": "封面 徽章字表格",
+          "content": "表格",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 104,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs43",
+          "x": 434,
+          "y": 600,
+          "name": "封面 徽章引用盒",
+          "width": 104,
+          "height": 26,
+          "fill": "#FFFFFF99",
+          "cornerRadius": 4,
+          "stroke": "#0A1D3A1A",
+          "strokeWidth": 1
+        },
+        {
+          "type": "text",
+          "id": "rs44",
+          "x": 434,
+          "y": 607,
+          "name": "封面 徽章字引用盒",
+          "content": "引用盒",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 104,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs45",
+          "x": 1064,
+          "y": 584,
+          "name": "封面 CTA",
+          "width": 136,
+          "height": 44,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#2563EB",
+                "position": 0
+              },
+              {
+                "color": "#1D4ED8",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 999
+        },
+        {
+          "type": "text",
+          "id": "rs46",
+          "x": 1064,
+          "y": 597,
+          "name": "封面 CTA字",
+          "content": "开始使用 →",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "textGrowth": "fixed-width",
+          "width": 136,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs47",
+          "x": 80,
+          "y": 678,
+          "name": "封面 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs48",
+          "x": 80,
+          "y": 690,
+          "name": "封面 页脚左",
+          "content": "PART 01 · COVER",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs49",
+          "x": 1000,
+          "y": 690,
+          "name": "封面 页脚右",
+          "content": "01 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs110",
+      "x": 1360,
+      "y": 0,
+      "name": "02 目录 Contents",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs51",
+          "x": 0,
+          "y": 0,
+          "name": "目录 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs52",
+          "x": 900,
+          "y": -140,
+          "name": "目录 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs53",
+          "x": 22,
+          "y": 22,
+          "name": "目录 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs54",
+          "x": 22,
+          "y": 22,
+          "name": "目录 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs55",
+          "x": 1242,
+          "y": 22,
+          "name": "目录 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs56",
+          "x": 1257,
+          "y": 22,
+          "name": "目录 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs57",
+          "x": 22,
+          "y": 697,
+          "name": "目录 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs58",
+          "x": 22,
+          "y": 682,
+          "name": "目录 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs59",
+          "x": 1242,
+          "y": 697,
+          "name": "目录 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs60",
+          "x": 1257,
+          "y": 682,
+          "name": "目录 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "text",
+          "id": "rs61",
+          "x": 66,
+          "y": 40,
+          "name": "目录 幽灵字",
+          "content": "Contents",
+          "fill": "#D9E4F5",
+          "fontFamily": "$font-serif",
+          "fontSize": 110,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs62",
+          "x": 80,
+          "y": 203,
+          "name": "目录 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs63",
+          "x": 77,
+          "y": 197,
+          "name": "目录 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs64",
+          "x": 97,
+          "y": 200,
+          "name": "目录 眉标",
+          "content": "PART 02 · CONTENTS",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs65",
+          "x": 78,
+          "y": 232,
+          "name": "目录 标题",
+          "content": "PPT模板内容",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs66",
+          "x": 80,
+          "y": 284,
+          "name": "目录 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs67",
+          "x": 80,
+          "y": 316,
+          "name": "目录 圈1",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs68",
+          "x": 80,
+          "y": 321,
+          "name": "目录 圈字1",
+          "content": "1",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs69",
+          "x": 120,
+          "y": 319,
+          "name": "目录 条目1",
+          "content": "封面页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs70",
+          "x": 80,
+          "y": 360,
+          "name": "目录 行线1",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs71",
+          "x": 640,
+          "y": 316,
+          "name": "目录 圈2",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs72",
+          "x": 640,
+          "y": 321,
+          "name": "目录 圈字2",
+          "content": "2",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs73",
+          "x": 680,
+          "y": 319,
+          "name": "目录 条目2",
+          "content": "目录页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs74",
+          "x": 640,
+          "y": 360,
+          "name": "目录 行线2",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs75",
+          "x": 80,
+          "y": 382,
+          "name": "目录 圈3",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs76",
+          "x": 80,
+          "y": 387,
+          "name": "目录 圈字3",
+          "content": "3",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs77",
+          "x": 120,
+          "y": 385,
+          "name": "目录 条目3",
+          "content": "关于模板 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs78",
+          "x": 80,
+          "y": 426,
+          "name": "目录 行线3",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs79",
+          "x": 640,
+          "y": 382,
+          "name": "目录 圈4",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs80",
+          "x": 640,
+          "y": 387,
+          "name": "目录 圈字4",
+          "content": "4",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs81",
+          "x": 680,
+          "y": 385,
+          "name": "目录 条目4",
+          "content": "两栏图文页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs82",
+          "x": 640,
+          "y": 426,
+          "name": "目录 行线4",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs83",
+          "x": 80,
+          "y": 448,
+          "name": "目录 圈5",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs84",
+          "x": 80,
+          "y": 453,
+          "name": "目录 圈字5",
+          "content": "5",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs85",
+          "x": 120,
+          "y": 451,
+          "name": "目录 条目5",
+          "content": "品字型分栏页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs86",
+          "x": 80,
+          "y": 492,
+          "name": "目录 行线5",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs87",
+          "x": 640,
+          "y": 448,
+          "name": "目录 圈6",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs88",
+          "x": 640,
+          "y": 453,
+          "name": "目录 圈字6",
+          "content": "6",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs89",
+          "x": 680,
+          "y": 451,
+          "name": "目录 条目6",
+          "content": "引用、链接和引用盒子 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs90",
+          "x": 640,
+          "y": 492,
+          "name": "目录 行线6",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs91",
+          "x": 80,
+          "y": 514,
+          "name": "目录 圈7",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs92",
+          "x": 80,
+          "y": 519,
+          "name": "目录 圈字7",
+          "content": "7",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs93",
+          "x": 120,
+          "y": 517,
+          "name": "目录 条目7",
+          "content": "代码块高亮 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs94",
+          "x": 80,
+          "y": 558,
+          "name": "目录 行线7",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs95",
+          "x": 640,
+          "y": 514,
+          "name": "目录 圈8",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs96",
+          "x": 640,
+          "y": 519,
+          "name": "目录 圈字8",
+          "content": "8",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs97",
+          "x": 680,
+          "y": 517,
+          "name": "目录 条目8",
+          "content": "流程图示例 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs98",
+          "x": 640,
+          "y": 558,
+          "name": "目录 行线8",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs99",
+          "x": 80,
+          "y": 580,
+          "name": "目录 圈9",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs100",
+          "x": 80,
+          "y": 585,
+          "name": "目录 圈字9",
+          "content": "9",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs101",
+          "x": 120,
+          "y": 583,
+          "name": "目录 条目9",
+          "content": "表格页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs102",
+          "x": 80,
+          "y": 624,
+          "name": "目录 行线9",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs103",
+          "x": 640,
+          "y": 580,
+          "name": "目录 圈10",
+          "width": 26,
+          "height": 26,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs104",
+          "x": 640,
+          "y": 585,
+          "name": "目录 圈字10",
+          "content": "10",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 26,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs105",
+          "x": 680,
+          "y": 583,
+          "name": "目录 条目10",
+          "content": "感谢页 ↗",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "500"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs106",
+          "x": 640,
+          "y": 624,
+          "name": "目录 行线10",
+          "width": 520,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs107",
+          "x": 80,
+          "y": 678,
+          "name": "目录 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs108",
+          "x": 80,
+          "y": 690,
+          "name": "目录 页脚左",
+          "content": "PART 02 · CONTENTS",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs109",
+          "x": 1000,
+          "y": 690,
+          "name": "目录 页脚右",
+          "content": "02 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs135",
+      "x": 2720,
+      "y": 0,
+      "name": "03 关于 About",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs111",
+          "x": 0,
+          "y": 0,
+          "name": "关于 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs112",
+          "x": 900,
+          "y": -140,
+          "name": "关于 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs113",
+          "x": 22,
+          "y": 22,
+          "name": "关于 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs114",
+          "x": 22,
+          "y": 22,
+          "name": "关于 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs115",
+          "x": 1242,
+          "y": 22,
+          "name": "关于 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs116",
+          "x": 1257,
+          "y": 22,
+          "name": "关于 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs117",
+          "x": 22,
+          "y": 697,
+          "name": "关于 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs118",
+          "x": 22,
+          "y": 682,
+          "name": "关于 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs119",
+          "x": 1242,
+          "y": 697,
+          "name": "关于 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs120",
+          "x": 1257,
+          "y": 682,
+          "name": "关于 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs121",
+          "x": 80,
+          "y": 67,
+          "name": "关于 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs122",
+          "x": 77,
+          "y": 61,
+          "name": "关于 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs123",
+          "x": 97,
+          "y": 64,
+          "name": "关于 眉标",
+          "content": "PART 03 · ABOUT",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs124",
+          "x": 78,
+          "y": 96,
+          "name": "关于 标题",
+          "content": "关于模板",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs125",
+          "x": 80,
+          "y": 148,
+          "name": "关于 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs126",
+          "x": 80,
+          "y": 182,
+          "name": "关于 正文",
+          "content": "在AI时代来临之前，我一直使用Marp工具来生成我的PPT，这份模板的灵感也是来自于Awesome Marp（https://github.com/favourhong/Awesome-Marp）的开源项目，这份模板一直是我用起来最顺手的。但是Marp并不适合于所有人，上手有一定的门槛。\n\nAI改变了一切。Pencil是一个由AI驱动的画布工具，且AI生成的每一个元素都是支持交互更改的，它几乎弥补了Marp所有的缺点。于是我将Awesome Marp模板导入其中，让AI提取设计语言并生成，效果很好，也添加了原有模板不具备的功能，比如代码高亮和流程图。\n\n基于这份模板，您可以很方便地打造自己的PPT。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 760,
+          "lineHeight": 1.8
+        },
+        {
+          "type": "rectangle",
+          "id": "rs127",
+          "x": 896,
+          "y": 182,
+          "name": "关于 侧栏",
+          "width": 304,
+          "height": 200,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "text",
+          "id": "rs128",
+          "x": 924,
+          "y": 210,
+          "name": "关于 侧栏标",
+          "content": "INSPIRATION",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "letterSpacing": 1.5
+        },
+        {
+          "type": "text",
+          "id": "rs129",
+          "x": 922,
+          "y": 236,
+          "name": "关于 侧栏题",
+          "content": "Awesome Marp",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 26,
+          "fontWeight": "normal",
+          "fontStyle": "italic"
+        },
+        {
+          "type": "text",
+          "id": "rs130",
+          "x": 924,
+          "y": 286,
+          "name": "关于 侧栏文",
+          "content": "github.com/favourhong",
+          "fill": "$gray",
+          "fontFamily": "$font-mono",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs131",
+          "x": 924,
+          "y": 308,
+          "name": "关于 侧栏文2",
+          "content": "/Awesome-Marp",
+          "fill": "$gray",
+          "fontFamily": "$font-mono",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs132",
+          "x": 80,
+          "y": 678,
+          "name": "关于 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs133",
+          "x": 80,
+          "y": 690,
+          "name": "关于 页脚左",
+          "content": "PART 03 · ABOUT",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs134",
+          "x": 1000,
+          "y": 690,
+          "name": "关于 页脚右",
+          "content": "03 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs158",
+      "x": 4080,
+      "y": 0,
+      "name": "04 正文·双栏 Two Columns",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs136",
+          "x": 0,
+          "y": 0,
+          "name": "双栏 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs137",
+          "x": 900,
+          "y": -140,
+          "name": "双栏 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs138",
+          "x": 22,
+          "y": 22,
+          "name": "双栏 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs139",
+          "x": 22,
+          "y": 22,
+          "name": "双栏 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs140",
+          "x": 1242,
+          "y": 22,
+          "name": "双栏 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs141",
+          "x": 1257,
+          "y": 22,
+          "name": "双栏 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs142",
+          "x": 22,
+          "y": 697,
+          "name": "双栏 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs143",
+          "x": 22,
+          "y": 682,
+          "name": "双栏 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs144",
+          "x": 1242,
+          "y": 697,
+          "name": "双栏 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs145",
+          "x": 1257,
+          "y": 682,
+          "name": "双栏 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs146",
+          "x": 80,
+          "y": 67,
+          "name": "双栏 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs147",
+          "x": 77,
+          "y": 61,
+          "name": "双栏 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs148",
+          "x": 97,
+          "y": 64,
+          "name": "双栏 眉标",
+          "content": "PART 04 · 正文 · TWO-COLUMN",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs149",
+          "x": 78,
+          "y": 96,
+          "name": "双栏 标题",
+          "content": "1. 正文 (双栏布局)",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs150",
+          "x": 80,
+          "y": 148,
+          "name": "双栏 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs151",
+          "x": 80,
+          "y": 182,
+          "name": "双栏 正文",
+          "content": "曲曲折折的荷塘上面，弥望的是田田的叶子。叶子出水很高，像亭亭的舞女的裙。\n\n层层的叶子中间，零星地点缀着些白花，有袅娜地开着的，有羞涩地打着朵儿的；正如一粒粒的明珠，又如碧天里的星星，又如刚出浴的美人。\n\n微风过处，送来缕缕清香，仿佛远处高楼上渺茫的歌声似的。这时候叶子与花也有一丝的颤动，像闪电般，霎时传过荷塘的那边去了。\n\n叶子本是肩并肩密密地挨着，这便宛然有了一道凝碧的波痕。叶子底下是脉脉的流水，遮住了，不能见一些颜色；而叶子却更见风致了。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 560,
+          "lineHeight": 1.8
+        },
+        {
+          "type": "text",
+          "id": "rs152",
+          "x": 80,
+          "y": 580,
+          "name": "双栏 出处",
+          "content": "—— 朱自清《荷塘月色》 返回 ↗",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs153",
+          "x": 700,
+          "y": 182,
+          "name": "双栏 配图",
+          "width": 500,
+          "height": 400,
+          "fill": {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1691460606272-0329689c20fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 12
+        },
+        {
+          "type": "text",
+          "id": "rs154",
+          "x": 700,
+          "y": 594,
+          "name": "双栏 图注",
+          "content": "图：荷塘 · Unsplash",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs155",
+          "x": 80,
+          "y": 678,
+          "name": "双栏 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs156",
+          "x": 80,
+          "y": 690,
+          "name": "双栏 页脚左",
+          "content": "PART 04 · 正文 · TWO-COLUMN",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs157",
+          "x": 1000,
+          "y": 690,
+          "name": "双栏 页脚右",
+          "content": "04 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs180",
+      "x": 5440,
+      "y": 0,
+      "name": "05 正文·品字 Pin",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs159",
+          "x": 0,
+          "y": 0,
+          "name": "品字 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs160",
+          "x": 900,
+          "y": -140,
+          "name": "品字 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs161",
+          "x": 22,
+          "y": 22,
+          "name": "品字 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs162",
+          "x": 22,
+          "y": 22,
+          "name": "品字 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs163",
+          "x": 1242,
+          "y": 22,
+          "name": "品字 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs164",
+          "x": 1257,
+          "y": 22,
+          "name": "品字 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs165",
+          "x": 22,
+          "y": 697,
+          "name": "品字 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs166",
+          "x": 22,
+          "y": 682,
+          "name": "品字 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs167",
+          "x": 1242,
+          "y": 697,
+          "name": "品字 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs168",
+          "x": 1257,
+          "y": 682,
+          "name": "品字 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs169",
+          "x": 80,
+          "y": 67,
+          "name": "品字 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs170",
+          "x": 77,
+          "y": 61,
+          "name": "品字 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs171",
+          "x": 97,
+          "y": 64,
+          "name": "品字 眉标",
+          "content": "PART 05 · 正文 · PIN",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs172",
+          "x": 78,
+          "y": 96,
+          "name": "品字 标题",
+          "content": "2. 正文 (品字布局)",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs173",
+          "x": 80,
+          "y": 148,
+          "name": "品字 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs174",
+          "x": 80,
+          "y": 182,
+          "name": "品字 正文",
+          "content": "四百年前，两位截然不同的科学家突破了当时已知世界的边界。1609年在威尼斯，伽利略·伽利雷透过望远镜观察星辰，并制作仪器和进行实验。在布拉格，科班出身的神学家约翰内斯·开普勒发现了行星运动定律，奠定了近代天体物理学的基础，并思考着宇宙的宏伟构造。托马斯·德·帕多瓦以至今较少受到关注却扣人心弦的通信往来为基础，讲述了这两位类型如此迥异的学者之间不对等的关系，以及他们如何在同样的时刻却以各自的方式探索星辰的奥秘。在彼此的鉴照下，他们的远见与固执、睿智与无知得以呈现。这是一部介绍新科学的崛起以及近代来临之际的巨大变革的作品。  ——《宇宙的奥秘》",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 1120,
+          "lineHeight": 1.8
+        },
+        {
+          "type": "rectangle",
+          "id": "rs175",
+          "x": 80,
+          "y": 370,
+          "name": "品字 图1",
+          "width": 552,
+          "height": 260,
+          "fill": {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1621796540685-5037cb5e866f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzODh8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 12
+        },
+        {
+          "type": "rectangle",
+          "id": "rs176",
+          "x": 648,
+          "y": 370,
+          "name": "品字 图2",
+          "width": 552,
+          "height": 260,
+          "fill": {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1544133544-47e2aef9b9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzY4NDEzODl8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "cornerRadius": 12
+        },
+        {
+          "type": "rectangle",
+          "id": "rs177",
+          "x": 80,
+          "y": 678,
+          "name": "品字 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs178",
+          "x": 80,
+          "y": 690,
+          "name": "品字 页脚左",
+          "content": "PART 05 · 正文 · PIN",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs179",
+          "x": 1000,
+          "y": 690,
+          "name": "品字 页脚右",
+          "content": "05 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs206",
+      "x": 6800,
+      "y": 0,
+      "name": "06 引用盒 Quote",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs181",
+          "x": 0,
+          "y": 0,
+          "name": "引用 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs182",
+          "x": 900,
+          "y": -140,
+          "name": "引用 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs183",
+          "x": 22,
+          "y": 22,
+          "name": "引用 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs184",
+          "x": 22,
+          "y": 22,
+          "name": "引用 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs185",
+          "x": 1242,
+          "y": 22,
+          "name": "引用 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs186",
+          "x": 1257,
+          "y": 22,
+          "name": "引用 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs187",
+          "x": 22,
+          "y": 697,
+          "name": "引用 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs188",
+          "x": 22,
+          "y": 682,
+          "name": "引用 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs189",
+          "x": 1242,
+          "y": 697,
+          "name": "引用 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs190",
+          "x": 1257,
+          "y": 682,
+          "name": "引用 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs191",
+          "x": 80,
+          "y": 67,
+          "name": "引用 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs192",
+          "x": 77,
+          "y": 61,
+          "name": "引用 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs193",
+          "x": 97,
+          "y": 64,
+          "name": "引用 眉标",
+          "content": "PART 06 · QUOTE",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs194",
+          "x": 78,
+          "y": 96,
+          "name": "引用 标题",
+          "content": "3. 引用盒子",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs195",
+          "x": 80,
+          "y": 148,
+          "name": "引用 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs196",
+          "x": 80,
+          "y": 182,
+          "name": "引用 面板",
+          "width": 1120,
+          "height": 300,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "rectangle",
+          "id": "rs197",
+          "x": 80,
+          "y": 182,
+          "name": "引用 竖线",
+          "width": 3,
+          "height": 300,
+          "fill": "$accent",
+          "cornerRadius": 2
+        },
+        {
+          "type": "icon",
+          "id": "rs198",
+          "x": 120,
+          "y": 218,
+          "name": "引用 图标",
+          "width": 24,
+          "height": 24,
+          "library": "lucide",
+          "icon": "quote",
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs199",
+          "x": 160,
+          "y": 218,
+          "name": "引用 标题",
+          "content": "合成控制法 (Synthetic Control Method)",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "rs200",
+          "x": 120,
+          "y": 268,
+          "name": "引用 文1",
+          "content": "SCM 最早由 Abadie and Gardeazabal (2003) 提出，用来研究西班牙巴斯克地区恐怖活动的经济成本，属于案例研究范畴 (Case Study)。Athey & Imbens (2017) 认为它是过去 15 年计量方法领域最重要的创新。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 1040,
+          "lineHeight": 1.7
+        },
+        {
+          "type": "rectangle",
+          "id": "rs201",
+          "x": 120,
+          "y": 356,
+          "name": "引用 内线",
+          "width": 1040,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs202",
+          "x": 120,
+          "y": 380,
+          "name": "引用 文2",
+          "content": "合成控制法的基本思想是：虽然无法找到巴斯克地区的最佳控制地区，但可对西班牙的若干大城市进行适当的线性组合（赋予不同的权重），以构造一个更为贴切的「合成控制地区」(Synthetic Control Region)，然后将真实的巴斯克地区与「合成的巴斯克地区」进行对比，即可得到恐袭的影响。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 1040,
+          "lineHeight": 1.7
+        },
+        {
+          "type": "rectangle",
+          "id": "rs203",
+          "x": 80,
+          "y": 678,
+          "name": "引用 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs204",
+          "x": 80,
+          "y": 690,
+          "name": "引用 页脚左",
+          "content": "PART 06 · QUOTE",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs205",
+          "x": 1000,
+          "y": 690,
+          "name": "引用 页脚右",
+          "content": "06 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs240",
+      "x": 8160,
+      "y": 0,
+      "name": "07 代码 Code",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs207",
+          "x": 0,
+          "y": 0,
+          "name": "代码 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs208",
+          "x": 900,
+          "y": -140,
+          "name": "代码 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs209",
+          "x": 22,
+          "y": 22,
+          "name": "代码 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs210",
+          "x": 22,
+          "y": 22,
+          "name": "代码 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs211",
+          "x": 1242,
+          "y": 22,
+          "name": "代码 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs212",
+          "x": 1257,
+          "y": 22,
+          "name": "代码 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs213",
+          "x": 22,
+          "y": 697,
+          "name": "代码 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs214",
+          "x": 22,
+          "y": 682,
+          "name": "代码 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs215",
+          "x": 1242,
+          "y": 697,
+          "name": "代码 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs216",
+          "x": 1257,
+          "y": 682,
+          "name": "代码 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs217",
+          "x": 80,
+          "y": 67,
+          "name": "代码 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs218",
+          "x": 77,
+          "y": 61,
+          "name": "代码 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs219",
+          "x": 97,
+          "y": 64,
+          "name": "代码 眉标",
+          "content": "PART 07 · CODE",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs220",
+          "x": 78,
+          "y": 96,
+          "name": "代码 标题",
+          "content": "4. 代码块高亮",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs221",
+          "x": 80,
+          "y": 148,
+          "name": "代码 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs222",
+          "x": 80,
+          "y": 168,
+          "name": "代码 说明",
+          "content": "支持多种编程语言的语法高亮显示，让代码更具可读性。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs223",
+          "x": 80,
+          "y": 210,
+          "name": "代码 面板",
+          "width": 1120,
+          "height": 400,
+          "fill": "#1E1E2E",
+          "cornerRadius": 10
+        },
+        {
+          "type": "ellipse",
+          "id": "rs224",
+          "x": 104,
+          "y": 234,
+          "name": "代码 点红",
+          "width": 10,
+          "height": 10,
+          "fill": "#FF5F57"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs225",
+          "x": 122,
+          "y": 234,
+          "name": "代码 点黄",
+          "width": 10,
+          "height": 10,
+          "fill": "#FEBC2E"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs226",
+          "x": 140,
+          "y": 234,
+          "name": "代码 点绿",
+          "width": 10,
+          "height": 10,
+          "fill": "#28C840"
+        },
+        {
+          "type": "text",
+          "id": "rs227",
+          "x": 164,
+          "y": 232,
+          "name": "代码 文件名",
+          "content": "main.go",
+          "fill": "#6C7086",
+          "fontFamily": "$font-mono",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs228",
+          "x": 120,
+          "y": 272,
+          "name": "代码 行01",
+          "content": "python",
+          "fill": "#7DD3FC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs229",
+          "x": 120,
+          "y": 306,
+          "name": "代码 行02",
+          "content": "def hello_world():",
+          "fill": "#CBA6F7",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs230",
+          "x": 120,
+          "y": 340,
+          "name": "代码 行03",
+          "content": "    \"\"\"打印问候语\"\"\"",
+          "fill": "#6C7086",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs231",
+          "x": 120,
+          "y": 374,
+          "name": "代码 行04",
+          "content": "    name = \"Marp\"",
+          "fill": "#F5E0DC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs232",
+          "x": 120,
+          "y": 408,
+          "name": "代码 行05",
+          "content": "    print(f\"Hello, {name}!\")",
+          "fill": "#F5E0DC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs233",
+          "x": 120,
+          "y": 442,
+          "name": "代码 行06",
+          "content": "    return True",
+          "fill": "#F5E0DC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs234",
+          "x": 120,
+          "y": 476,
+          "name": "代码 行07",
+          "content": " ",
+          "fill": "#F5E0DC",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs235",
+          "x": 120,
+          "y": 510,
+          "name": "代码 行08",
+          "content": "if __name__ == \"__main__\":",
+          "fill": "#CBA6F7",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs236",
+          "x": 120,
+          "y": 544,
+          "name": "代码 行09",
+          "content": "    hello_world()",
+          "fill": "#89DCEB",
+          "fontFamily": "$font-mono",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs237",
+          "x": 80,
+          "y": 678,
+          "name": "代码 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs238",
+          "x": 80,
+          "y": 690,
+          "name": "代码 页脚左",
+          "content": "PART 07 · CODE",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs239",
+          "x": 1000,
+          "y": 690,
+          "name": "代码 页脚右",
+          "content": "07 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs279",
+      "x": 9520,
+      "y": 0,
+      "name": "08 流程 Flow",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs241",
+          "x": 0,
+          "y": 0,
+          "name": "流程 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs242",
+          "x": 900,
+          "y": -140,
+          "name": "流程 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs243",
+          "x": 22,
+          "y": 22,
+          "name": "流程 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs244",
+          "x": 22,
+          "y": 22,
+          "name": "流程 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs245",
+          "x": 1242,
+          "y": 22,
+          "name": "流程 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs246",
+          "x": 1257,
+          "y": 22,
+          "name": "流程 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs247",
+          "x": 22,
+          "y": 697,
+          "name": "流程 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs248",
+          "x": 22,
+          "y": 682,
+          "name": "流程 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs249",
+          "x": 1242,
+          "y": 697,
+          "name": "流程 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs250",
+          "x": 1257,
+          "y": 682,
+          "name": "流程 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs251",
+          "x": 80,
+          "y": 67,
+          "name": "流程 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs252",
+          "x": 77,
+          "y": 61,
+          "name": "流程 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs253",
+          "x": 97,
+          "y": 64,
+          "name": "流程 眉标",
+          "content": "PART 08 · FLOW",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs254",
+          "x": 78,
+          "y": 96,
+          "name": "流程 标题",
+          "content": "5. 流程图示例",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs255",
+          "x": 80,
+          "y": 148,
+          "name": "流程 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs256",
+          "x": 80,
+          "y": 168,
+          "name": "流程 说明",
+          "content": "使用简洁的流程图展示工作流或算法步骤，直观清晰。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs257",
+          "x": 80,
+          "y": 260,
+          "name": "流程 框数据采集",
+          "width": 240,
+          "height": 180,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "icon",
+          "id": "rs258",
+          "x": 176,
+          "y": 292,
+          "name": "流程 图标数据采集",
+          "width": 36,
+          "height": 36,
+          "library": "lucide",
+          "icon": "database",
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs259",
+          "x": 80,
+          "y": 348,
+          "name": "流程 题数据采集",
+          "content": "数据采集",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs260",
+          "x": 80,
+          "y": 380,
+          "name": "流程 述数据采集",
+          "content": "收集原始数据",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs261",
+          "x": 328,
+          "y": 332,
+          "name": "流程 箭头0",
+          "content": "→",
+          "fill": "$accent",
+          "fontFamily": "$font-display",
+          "fontSize": 22,
+          "fontWeight": "700"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs262",
+          "x": 376,
+          "y": 260,
+          "name": "流程 框数据清洗",
+          "width": 240,
+          "height": 180,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "icon",
+          "id": "rs263",
+          "x": 472,
+          "y": 292,
+          "name": "流程 图标数据清洗",
+          "width": 36,
+          "height": 36,
+          "library": "lucide",
+          "icon": "droplets",
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs264",
+          "x": 376,
+          "y": 348,
+          "name": "流程 题数据清洗",
+          "content": "数据清洗",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs265",
+          "x": 376,
+          "y": 380,
+          "name": "流程 述数据清洗",
+          "content": "处理缺失值与异常",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs266",
+          "x": 624,
+          "y": 332,
+          "name": "流程 箭头1",
+          "content": "→",
+          "fill": "$accent",
+          "fontFamily": "$font-display",
+          "fontSize": 22,
+          "fontWeight": "700"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs267",
+          "x": 672,
+          "y": 260,
+          "name": "流程 框模型训练",
+          "width": 240,
+          "height": 180,
+          "fill": "$tint",
+          "cornerRadius": 12
+        },
+        {
+          "type": "icon",
+          "id": "rs268",
+          "x": 768,
+          "y": 292,
+          "name": "流程 图标模型训练",
+          "width": 36,
+          "height": 36,
+          "library": "lucide",
+          "icon": "cpu",
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs269",
+          "x": 672,
+          "y": 348,
+          "name": "流程 题模型训练",
+          "content": "模型训练",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs270",
+          "x": 672,
+          "y": 380,
+          "name": "流程 述模型训练",
+          "content": "构建预测模型",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs271",
+          "x": 920,
+          "y": 332,
+          "name": "流程 箭头2",
+          "content": "→",
+          "fill": "$accent",
+          "fontFamily": "$font-display",
+          "fontSize": 22,
+          "fontWeight": "700"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs272",
+          "x": 968,
+          "y": 260,
+          "name": "流程 框结果评估",
+          "width": 240,
+          "height": 180,
+          "fill": "$accent",
+          "cornerRadius": 12
+        },
+        {
+          "type": "icon",
+          "id": "rs273",
+          "x": 1064,
+          "y": 292,
+          "name": "流程 图标结果评估",
+          "width": 36,
+          "height": 36,
+          "library": "lucide",
+          "icon": "check",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "text",
+          "id": "rs274",
+          "x": 968,
+          "y": 348,
+          "name": "流程 题结果评估",
+          "content": "结果评估",
+          "fill": "#FFFFFF",
+          "fontFamily": "$font-display",
+          "fontSize": 17,
+          "fontWeight": "700",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs275",
+          "x": 968,
+          "y": 380,
+          "name": "流程 述结果评估",
+          "content": "验证模型效果",
+          "fill": "#FFFFFFCC",
+          "fontFamily": "$font-body",
+          "fontSize": 12,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 240,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs276",
+          "x": 80,
+          "y": 678,
+          "name": "流程 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs277",
+          "x": 80,
+          "y": 690,
+          "name": "流程 页脚左",
+          "content": "PART 08 · FLOW",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs278",
+          "x": 1000,
+          "y": 690,
+          "name": "流程 页脚右",
+          "content": "08 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs326",
+      "x": 10880,
+      "y": 0,
+      "name": "09 表格 Table",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs280",
+          "x": 0,
+          "y": 0,
+          "name": "表格 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs281",
+          "x": 900,
+          "y": -140,
+          "name": "表格 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs282",
+          "x": 22,
+          "y": 22,
+          "name": "表格 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs283",
+          "x": 22,
+          "y": 22,
+          "name": "表格 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs284",
+          "x": 1242,
+          "y": 22,
+          "name": "表格 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs285",
+          "x": 1257,
+          "y": 22,
+          "name": "表格 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs286",
+          "x": 22,
+          "y": 697,
+          "name": "表格 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs287",
+          "x": 22,
+          "y": 682,
+          "name": "表格 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs288",
+          "x": 1242,
+          "y": 697,
+          "name": "表格 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs289",
+          "x": 1257,
+          "y": 682,
+          "name": "表格 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs290",
+          "x": 80,
+          "y": 67,
+          "name": "表格 眉标点",
+          "width": 7,
+          "height": 7,
+          "fill": "$accent"
+        },
+        {
+          "type": "ellipse",
+          "id": "rs291",
+          "x": 77,
+          "y": 61,
+          "name": "表格 眉标点晕",
+          "width": 13,
+          "height": 13,
+          "fill": "#2563EB2E"
+        },
+        {
+          "type": "text",
+          "id": "rs292",
+          "x": 97,
+          "y": 64,
+          "name": "表格 眉标",
+          "content": "PART 09 · TABLE",
+          "fill": "$accent",
+          "fontFamily": "$font-body",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2.4
+        },
+        {
+          "type": "text",
+          "id": "rs293",
+          "x": 78,
+          "y": 96,
+          "name": "表格 标题",
+          "content": "6. 图表示例",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 30,
+          "fontWeight": "800",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "rectangle",
+          "id": "rs294",
+          "x": 80,
+          "y": 148,
+          "name": "表格 题线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs295",
+          "x": 80,
+          "y": 168,
+          "name": "表格 说明",
+          "content": "下表对比了几种常见的计量经济学方法及其应用场景。",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs296",
+          "x": 96,
+          "y": 226,
+          "name": "表格 表头方法名称",
+          "content": "方法名称",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "rs297",
+          "x": 416,
+          "y": 226,
+          "name": "表格 表头提出者",
+          "content": "提出者",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "rs298",
+          "x": 716,
+          "y": 226,
+          "name": "表格 表头应用领域",
+          "content": "应用领域",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "rs299",
+          "x": 976,
+          "y": 226,
+          "name": "表格 表头核心特点",
+          "content": "核心特点",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 13,
+          "fontWeight": "700"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs300",
+          "x": 80,
+          "y": 254,
+          "name": "表格 表头线",
+          "width": 1120,
+          "height": 2,
+          "fill": "$accent"
+        },
+        {
+          "type": "text",
+          "id": "rs301",
+          "x": 96,
+          "y": 276,
+          "name": "表格 格00",
+          "content": "合成控制法",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "rs302",
+          "x": 416,
+          "y": 276,
+          "name": "表格 格01",
+          "content": "Abadie (2003)",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs303",
+          "x": 716,
+          "y": 276,
+          "name": "表格 格02",
+          "content": "政策评估 / 案例研究",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs304",
+          "x": 976,
+          "y": 276,
+          "name": "表格 格03",
+          "content": "构建合成控制组进行对比",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs305",
+          "x": 80,
+          "y": 318,
+          "name": "表格 行线0",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs306",
+          "x": 80,
+          "y": 318,
+          "name": "表格 斑马1",
+          "width": 1120,
+          "height": 64,
+          "fill": "$tint"
+        },
+        {
+          "type": "text",
+          "id": "rs307",
+          "x": 96,
+          "y": 340,
+          "name": "表格 格10",
+          "content": "双重差分",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "rs308",
+          "x": 416,
+          "y": 340,
+          "name": "表格 格11",
+          "content": "Card & Krueger (1994)",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs309",
+          "x": 716,
+          "y": 340,
+          "name": "表格 格12",
+          "content": "政策效应评估",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs310",
+          "x": 976,
+          "y": 340,
+          "name": "表格 格13",
+          "content": "利用处理前后差异估计因果",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs311",
+          "x": 80,
+          "y": 382,
+          "name": "表格 行线1",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs312",
+          "x": 96,
+          "y": 404,
+          "name": "表格 格20",
+          "content": "工具变量",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "rs313",
+          "x": 416,
+          "y": 404,
+          "name": "表格 格21",
+          "content": "Wright (1928)",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs314",
+          "x": 716,
+          "y": 404,
+          "name": "表格 格22",
+          "content": "内生性 / 因果推断",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs315",
+          "x": 976,
+          "y": 404,
+          "name": "表格 格23",
+          "content": "通过工具分离内生变异",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs316",
+          "x": 80,
+          "y": 446,
+          "name": "表格 行线2",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs317",
+          "x": 80,
+          "y": 446,
+          "name": "表格 斑马3",
+          "width": 1120,
+          "height": 64,
+          "fill": "$tint"
+        },
+        {
+          "type": "text",
+          "id": "rs318",
+          "x": 96,
+          "y": 468,
+          "name": "表格 格30",
+          "content": "断点回归",
+          "fill": "$ink",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "rs319",
+          "x": 416,
+          "y": 468,
+          "name": "表格 格31",
+          "content": "Thistlethwaite (1960)",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs320",
+          "x": 716,
+          "y": 468,
+          "name": "表格 格32",
+          "content": "政策门槛 / 资格限制",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "rs321",
+          "x": 976,
+          "y": 468,
+          "name": "表格 格33",
+          "content": "利用断点处局部随机性",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs322",
+          "x": 80,
+          "y": 510,
+          "name": "表格 行线3",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs323",
+          "x": 80,
+          "y": 678,
+          "name": "表格 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs324",
+          "x": 80,
+          "y": 690,
+          "name": "表格 页脚左",
+          "content": "PART 09 · TABLE",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs325",
+          "x": 1000,
+          "y": 690,
+          "name": "表格 页脚右",
+          "content": "09 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rs345",
+      "x": 12240,
+      "y": 0,
+      "name": "10 致谢 Thanks",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$paper",
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "rs327",
+          "x": 0,
+          "y": 0,
+          "name": "致谢 底渐变",
+          "width": 1280,
+          "height": 720,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 180,
+            "colors": [
+              {
+                "color": "#FFFFFF",
+                "position": 0
+              },
+              {
+                "color": "#F6F8FB",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "rs328",
+          "x": 900,
+          "y": -140,
+          "name": "致谢 辉光",
+          "width": 520,
+          "height": 520,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "center": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2563EB14",
+                "position": 0
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "rs329",
+          "x": 28,
+          "y": 28,
+          "name": "致谢 内框",
+          "width": 1224,
+          "height": 664,
+          "fill": "#00000000",
+          "cornerRadius": 6,
+          "stroke": "$line",
+          "strokeWidth": 1
+        },
+        {
+          "type": "rectangle",
+          "id": "rs330",
+          "x": 22,
+          "y": 22,
+          "name": "致谢 角TLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs331",
+          "x": 22,
+          "y": 22,
+          "name": "致谢 角TLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs332",
+          "x": 1242,
+          "y": 22,
+          "name": "致谢 角TRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs333",
+          "x": 1257,
+          "y": 22,
+          "name": "致谢 角TRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs334",
+          "x": 22,
+          "y": 697,
+          "name": "致谢 角BLh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs335",
+          "x": 22,
+          "y": 682,
+          "name": "致谢 角BLv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs336",
+          "x": 1242,
+          "y": 697,
+          "name": "致谢 角BRh",
+          "width": 16,
+          "height": 1,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs337",
+          "x": 1257,
+          "y": 682,
+          "name": "致谢 角BRv",
+          "width": 1,
+          "height": 16,
+          "fill": "#2563EB73"
+        },
+        {
+          "type": "text",
+          "id": "rs338",
+          "x": 0,
+          "y": 260,
+          "name": "致谢 主文案",
+          "content": "感谢聆听",
+          "fill": "$ink",
+          "fontFamily": "$font-display",
+          "fontSize": 48,
+          "fontWeight": "800",
+          "letterSpacing": -1,
+          "textGrowth": "fixed-width",
+          "width": 1280,
+          "textAlign": "center"
+        },
+        {
+          "type": "text",
+          "id": "rs339",
+          "x": 0,
+          "y": 330,
+          "name": "致谢 斜体",
+          "content": "Thanks for listening.",
+          "fill": "$accent",
+          "fontFamily": "$font-serif",
+          "fontSize": 30,
+          "fontWeight": "normal",
+          "fontStyle": "italic",
+          "textGrowth": "fixed-width",
+          "width": 1280,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs340",
+          "x": 480,
+          "y": 400,
+          "name": "致谢 光线",
+          "width": 320,
+          "height": 1,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "rotation": 90,
+            "colors": [
+              {
+                "color": "#2563EB00",
+                "position": 0
+              },
+              {
+                "color": "#2563EB73",
+                "position": 0.5
+              },
+              {
+                "color": "#2563EB00",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "id": "rs341",
+          "x": 0,
+          "y": 428,
+          "name": "致谢 副文案",
+          "content": "如有疑问，欢迎交流",
+          "fill": "$gray",
+          "fontFamily": "$font-body",
+          "fontSize": 15,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 1280,
+          "textAlign": "center"
+        },
+        {
+          "type": "rectangle",
+          "id": "rs342",
+          "x": 80,
+          "y": 678,
+          "name": "致谢 页脚线",
+          "width": 1120,
+          "height": 1,
+          "fill": "$line"
+        },
+        {
+          "type": "text",
+          "id": "rs343",
+          "x": 80,
+          "y": 690,
+          "name": "致谢 页脚左",
+          "content": "PART 10 · THANKS",
+          "fill": "$faint",
+          "fontFamily": "$font-body",
+          "fontSize": 10,
+          "fontWeight": "500",
+          "letterSpacing": 1.6
+        },
+        {
+          "type": "text",
+          "id": "rs344",
+          "x": 1000,
+          "y": 690,
+          "name": "致谢 页脚右",
+          "content": "10 / 10 · TEMPLATE",
+          "fill": "$faint",
+          "fontFamily": "$font-mono",
+          "fontSize": 10,
+          "fontWeight": "normal",
+          "textGrowth": "fixed-width",
+          "width": 200,
+          "textAlign": "right"
+        }
+      ]
+    }
+  ]
+}

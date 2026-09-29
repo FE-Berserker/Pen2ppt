@@ -30,6 +30,7 @@ Pen2ppt 打通 `.pen → HTML → PPTX` 的完整转换链路：
 - ✅ **图片填充保留**：图片填充以原始字节嵌入（PowerPoint 原生裁剪），不压缩不重编码
 - ✅ **WPS 中文兼容**：导出后自动修复 WPS 下的中文字体乱码 / 西文字体替换问题
 - ✅ **统一导出目录**：首次使用会引导设置一个导出路径（`PEN2PPT_WORKSPACE` 环境变量），之后所有导出按 `<工作区>/<名称>/` 归档，不再散落在各个项目里
+- ✅ **模板库**：内置通用模板（极简商务 / 深色科技等），新建 PPT 时会询问选用哪个模板，scaffold 到工作区后在 Pencil 里按模板页型创作；也可导入自己的私有模板（存工作区 `_templates/`，不进仓库）
 - ✅ **不改动原始 `.pen`**：所有尺寸转换都发生在 HTML→PPTX 阶段，源文件只读
 
 ### 仓库结构
@@ -45,12 +46,17 @@ pen2ppt/
 │   ├── export-pptx.mjs             # 无头 Chromium + dom-to-pptx → .pptx
 │   ├── native-image-patch.mjs      # dom-to-pptx 内存补丁：图片原始字节嵌入 + 原生裁剪
 │   ├── fix-cjk-fonts.mjs           # 导出后修复 WPS 中文字体乱码
-│   └── workspace.mjs               # 统一导出工作区（PEN2PPT_WORKSPACE）：get / set / dir
+│   ├── workspace.mjs               # 统一导出工作区（PEN2PPT_WORKSPACE）：get / set / dir
+│   └── templates.mjs               # 模板库：list / new / add
+├── templates/                      # 内置模板库（编排规范见 templates/README.md）
+│   ├── minimal-business/           # 暖米杂志风（衬线标题 + 砖红点缀，同内容清单）
+│   ├── dark-tech/                  # 深空科技风（Linear 风深色，同内容清单）
+│   ├── teal-editorial/             # 青绿编辑风（10 种页型，含 preview.pptx）
+│   └── blue-editorial/             # 企业蓝 · 极简编辑风（teal 内容的高级视觉重制）
 ├── references/
 │   └── WPS-CJK-FONT-FIX.md         # 字体修复原理与参数说明
 └── examples/
-    ├── Custom_ppt_template.pen     # 示例 Pencil 设计文件（PPT 模板）
-    └── Custom_ppt_template.pptx    # 由该模板生成的示例 PPTX
+    └── Custom_ppt_template.pptx    # 青绿编辑风的导出成品示例
 ```
 
 ### 安装
@@ -96,6 +102,9 @@ npm install
 > "把这个 .pen 文件导出成 PPT"
 > "只要封面和目录两页，输出为 intro.pptx"
 > "用 1920×1080 的尺寸导出"
+> "帮我做一套三季度工作汇报"（新建场景）
+
+**已有 .pen**：直接转换，不问模板。**新建 PPT**（手里没有 .pen）：会列出内置模板和你的私有模板（`<工作区>/_templates/`）让你选，选好后在工作区 scaffold 出 `<工作区>/<名称>/<名称>.pen`，在 Pencil 里复制模板页型做新页，然后走正常导出。想导入自己的模板："把我的模板加进去"，或直接运行 `node <skills目录>/pen2ppt/scripts/templates.mjs add <模板文件夹>`。
 
 流水线会自动完成：读取顶层 Frame → 逐页 `export_html` → 拼接 → 渲染 PPTX → 报告输出路径、页数及非 16:9 页面的适配提示。所有产物都落在统一的导出工作区下（首次使用会引导你设置路径，也可用 `PEN2PPT_WORKSPACE` 环境变量指定），按 `<工作区>/<名称>/` 分子目录归档。
 
@@ -114,7 +123,7 @@ node <skills目录>/pen2ppt/scripts/export-pptx.mjs "$W/combined.html" \
   -o "$W/deck.pptx" --selector .slide
 ```
 
-想先试试效果？本仓库 `examples/` 下自带示例模板 `Custom_ppt_template.pen` 及其导出成品。
+想先试试效果？`templates/` 下有四套内置模板可直接新建；`examples/` 里留有导出的成品 PPTX 样例。
 
 ### 还原度说明
 
@@ -158,6 +167,7 @@ In the output, **text stays as real, editable text**, solid-color rectangles/ell
 - ✅ **Image fills at original fidelity**: images embed as original bytes with PowerPoint-native cropping — no downscaling, no re-encoding
 - ✅ **WPS CJK compatibility**: an automatic post-export fix repairs garbled CJK / substituted Latin fonts in WPS
 - ✅ **One shared export workspace**: the first run prompts for an output directory (the `PEN2PPT_WORKSPACE` env var); every export is then archived under `<workspace>/<name>/` instead of being scattered across projects
+- ✅ **Template library**: built-in generic templates (minimal business, dark tech, …). Creating a NEW deck asks which template to use, scaffolds it into the workspace, and you author pages in Pencil from the template's page types. Personal templates live in the workspace `_templates/` — never in the repo
 - ✅ **Original `.pen` untouched**: all size conversion happens in the HTML→PPTX step; the source file is read-only
 
 ### Repository Structure
@@ -173,12 +183,17 @@ pen2ppt/
 │   ├── export-pptx.mjs             # Headless Chromium + dom-to-pptx → .pptx
 │   ├── native-image-patch.mjs      # In-memory dom-to-pptx patch: original-byte image embedding + native crop
 │   ├── fix-cjk-fonts.mjs           # Post-export fix for garbled CJK fonts in WPS
-│   └── workspace.mjs               # Shared export workspace (PEN2PPT_WORKSPACE): get / set / dir
+│   ├── workspace.mjs               # Shared export workspace (PEN2PPT_WORKSPACE): get / set / dir
+│   └── templates.mjs               # Template library: list / new / add
+├── templates/                      # Built-in templates (conventions: templates/README.md)
+│   ├── minimal-business/           # Warm mocha editorial (serif display + brick accents)
+│   ├── dark-tech/                  # Deep-space Linear-style dark theme
+│   ├── teal-editorial/             # Teal editorial, 10 page types (with preview.pptx)
+│   └── blue-editorial/             # Enterprise blue premium restyle of teal-editorial's content
 ├── references/
 │   └── WPS-CJK-FONT-FIX.md         # How the font fix works and its options
 └── examples/
-    ├── Custom_ppt_template.pen     # Sample Pencil design file (PPT template)
-    └── Custom_ppt_template.pptx    # Sample PPTX generated from it
+    └── Custom_ppt_template.pptx    # Sample PPTX exported from the teal-editorial theme
 ```
 
 ### Installation
@@ -224,6 +239,9 @@ Once installed, just ask your agent, e.g.:
 > "Export this .pen file to PowerPoint"
 > "Only the cover and agenda slides, output as intro.pptx"
 > "Export at 1920×1080"
+> "Make me a Q3 work report deck" (new-deck scenario)
+
+**With an existing .pen**: straight conversion, no template question. **New deck** (no .pen in hand): you'll be asked to pick from built-in templates and your personal ones (`<workspace>/_templates/`); the choice is scaffolded to `<workspace>/<name>/<name>.pen`, you author pages in Pencil by duplicating the template's page-type frames, then the normal export runs. To import your own template: "add my template folder", or run `node <skills-dir>/pen2ppt/scripts/templates.mjs add <folder>`.
 
 The pipeline automatically: reads top-level frames → `export_html` per frame → stitches → renders PPTX → reports the output path, slide count, and any non-16:9 fitting warnings. Everything lands in one shared export workspace (the first run walks you through setting it; you can also set the `PEN2PPT_WORKSPACE` env var), archived per deck under `<workspace>/<name>/`.
 
@@ -242,7 +260,7 @@ node <skills-dir>/pen2ppt/scripts/export-pptx.mjs "$W/combined.html" \
   -o "$W/deck.pptx" --selector .slide
 ```
 
-Want a quick try? `examples/` ships a sample template `Custom_ppt_template.pen` and its exported PPTX.
+Want a quick try? `templates/` ships four built-in themes ready to scaffold; `examples/` keeps a sample exported PPTX.
 
 ### Fidelity
 
